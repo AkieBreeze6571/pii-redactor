@@ -1,0 +1,39 @@
+model:
+  pretrained_model_name: hfl/chinese-macbert-base
+  max_length: 256
+  dropout: 0.1
+
+training:
+  learning_rate: 2.0e-5
+  batch_size: 8
+  evaluation_batch_size: 16
+  num_epochs: 5
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  gradient_accumulation_steps: 1
+  max_grad_norm: 1.0
+  early_stopping_patience: 2
+  save_total_limit: 3
+  fp16: false
+  seed: 42
+  resume_from_checkpoint: null
+  metric_for_best_model: macro_f1
+
+data:
+  train_path: data/processed/train.jsonl
+  validation_path: data/processed/validation.jsonl
+  test_path: data/processed/test_fixed.jsonl
+  external_test_path: data/processed/external_test.jsonl
+  max_train_samples: null
+  max_validation_samples: null
+  max_test_samples: null
+
+loss:
+  use_class_weights: false
+  class_weight_method: inverse_frequency
+
+output:
+  run_name: macbert_pii_v1
+  checkpoint_root: checkpoints/runs
+  best_model_dir: checkpoints/best
+  report_dir: reports

@@ -8,6 +8,10 @@ __pycache__/
 # Local datasets and generated artifacts
 data/raw/
 data/generated/
+data/processed/*
+!data/processed/.gitkeep
+data/annotations/*
+!data/annotations/.gitkeep
 data/images/
 !data/images/
 data/images/*

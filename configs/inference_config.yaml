@@ -1,0 +1,35 @@
+ner:
+  model_path: checkpoints/best
+  default_threshold: 0.60
+  thresholds:
+    person: 0.70
+    address: 0.55
+    organization: 0.65
+    company: 0.65
+    school: 0.65
+    hospital: 0.65
+  window_stride: 64
+
+fusion:
+  rule_weight: 1.0
+  ner_weight: 0.85
+  context_weight: 0.55
+  overlap_threshold: 0.5
+
+mapping:
+  horizontal_padding: 5
+  vertical_padding: 3
+  minimum_box_width: 3
+  minimum_box_height: 3
+
+ocr:
+  language: ch
+  max_image_side: 2400
+  use_angle_cls: true
+  cache_enabled: true
+  config_version: 1
+
+redaction:
+  default_mode: black
+  mosaic_block_size: 10
+  blur_kernel_size: 31
