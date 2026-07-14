@@ -1,3 +1,5 @@
+import pytest
+
 from services.coordinate_mapper import CoordinateMapper
 from services.ocr_service import reconstruct_text
 
@@ -10,8 +12,10 @@ def test_single_block_local_mapping() -> None:
     blocks = [block("收件人张三电话号", [[0, 0], [80, 0], [80, 20], [0, 20]])]
     rebuilt = reconstruct_text(blocks)
     result = CoordinateMapper(0, 0).map_entity({"type": "person", "text": "张三", "start": 3, "end": 5}, rebuilt["blocks"], rebuilt["char_map"])
-    assert result["boxes"][0] == [[30.0, 0.0], [50.0, 0.0], [50.0, 20.0], [30.0, 20.0]]
-    assert result["mapping_quality"] == "exact"
+    assert result["mapping_steps"][0]["weighted"] == [[30.0, 0.0], [50.0, 0.0], [50.0, 20.0], [30.0, 20.0]]
+    assert result["boxes"][0][0][0] < 30 and result["boxes"][0][1][0] > 50
+    assert result["mapping_quality"] == "estimated"
+    assert result["mapping_strategy"] == "weighted"
 
 
 def test_cross_block_entity_gets_multiple_boxes() -> None:
@@ -22,15 +26,17 @@ def test_cross_block_entity_gets_multiple_boxes() -> None:
     rebuilt = reconstruct_text(blocks)
     result = CoordinateMapper(0, 0).map_entity({"type": "address", "text": rebuilt["full_text"], "start": 0, "end": len(rebuilt["full_text"])}, rebuilt["blocks"], rebuilt["char_map"])
     assert len(result["boxes"]) == 2
-    assert result["mapping_quality"] == "estimated"
+    assert result["mapping_quality"] == "coarse"
+    assert result["mapping_strategy"] == "full_block"
 
 
 def test_tilted_polygon_interpolation() -> None:
     blocks = [block("1234", [[0, 0], [40, 10], [38, 30], [-2, 20]])]
     rebuilt = reconstruct_text(blocks)
     result = CoordinateMapper(0, 0).map_entity({"type": "phone", "text": "23", "start": 1, "end": 3}, rebuilt["blocks"], rebuilt["char_map"])
-    assert result["boxes"][0][0] == [10.0, 2.5]
-    assert result["boxes"][0][1] == [30.0, 7.5]
+    initial = result["mapping_steps"][0]["weighted"]
+    assert initial[0] == [10.0, 2.5]
+    assert initial[1] == [30.0, 7.5]
 
 
 def test_boxes_are_clipped_to_image() -> None:
@@ -44,7 +50,9 @@ def test_repeated_value_uses_character_position() -> None:
     blocks = [block("123-123", [[0, 0], [70, 0], [70, 20], [0, 20]])]
     rebuilt = reconstruct_text(blocks)
     result = CoordinateMapper(0, 0).map_entity({"type": "postal_code", "text": "123", "start": 4, "end": 7}, rebuilt["blocks"], rebuilt["char_map"])
-    assert result["boxes"][0][0][0] == 40
+    initial_left = result["mapping_steps"][0]["weighted"][0][0]
+    assert initial_left == pytest.approx(38.2, abs=0.2)
+    assert initial_left > 35
 
 
 def test_coarse_fallback_and_empty_ocr() -> None:
@@ -55,3 +63,4 @@ def test_coarse_fallback_and_empty_ocr() -> None:
     result = mapper.map_entity(entity, blocks, [])
     assert result["boxes"] == [blocks[0]["polygon"]]
     assert result["mapping_quality"] == "coarse"
+    assert result["mapping_strategy"] == "full_block"

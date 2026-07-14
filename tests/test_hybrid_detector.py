@@ -8,8 +8,10 @@ class FakeNer:
 
     def __init__(self, entities: list[dict]) -> None:
         self.entities = entities
+        self.calls = 0
 
     def detect(self, text: str, thresholds=None) -> list[dict]:
+        self.calls += 1
         return [dict(item) for item in self.entities]
 
 
@@ -43,3 +45,11 @@ def test_enabled_types_filter() -> None:
     detector = HybridDetector(RuleDetector(), FakeNer([]), ContextDetector())
     result = detector.detect("电话13812345678，邮箱a@example.com", enabled_types={"email"})
     assert [item["type"] for item in result] == ["email"]
+
+
+def test_detailed_detection_reuses_one_ner_result() -> None:
+    ner = FakeNer([])
+    details = HybridDetector(RuleDetector(), ner, ContextDetector()).detect_with_details("SYNTHETIC")
+    assert ner.calls == 1
+    assert details["counts"]["ner_calls"] == 1
+    assert set(details) == {"rules", "ner", "context", "final", "timing", "counts"}

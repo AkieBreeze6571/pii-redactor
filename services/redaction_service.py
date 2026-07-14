@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import time
 import uuid
 from pathlib import Path
 from typing import Any
@@ -35,9 +36,11 @@ class RedactionService:
         black_color: tuple[int, int, int] = (0, 0, 0),
         mosaic_block_size: int = 10,
         blur_kernel_size: int = 31,
+        stage_timings: dict[str, float] | None = None,
     ) -> dict[str, str]:
         if mode not in {"black", "mosaic", "blur"}:
             raise ValueError(f"不支持的打码模式：{mode}")
+        redaction_started = time.perf_counter()
         original = load_image(image).convert("RGB")
         result = original.copy()
         mask = Image.new("L", original.size, 0)
@@ -49,6 +52,16 @@ class RedactionService:
                 ImageDraw.Draw(result).polygon(polygon, fill=black_color)
             else:
                 self._filter_region(result, polygon, mode, mosaic_block_size, blur_kernel_size)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        token = uuid.uuid4().hex[:10]; stem = safe_stem(filename)
+        result_path = self.output_dir / f"{stem}_{token}_{mode}.png"
+        preview_path = self.output_dir / f"{stem}_{token}_preview.png"
+        mask_path = self.output_dir / f"{stem}_{token}_mask.png"
+        result.save(result_path); mask.save(mask_path)
+        if stage_timings is not None:
+            stage_timings["redaction"] = time.perf_counter() - redaction_started
+
+        preview_started = time.perf_counter()
         preview = original.copy(); preview_draw = ImageDraw.Draw(preview)
         for entity in entities:
             if not entity.get("enabled", True): continue
@@ -57,12 +70,9 @@ class RedactionService:
                 if len(points) >= 3:
                     preview_draw.line(points + [points[0]], fill=(220, 30, 30), width=3)
                     preview_draw.text(points[0], str(entity.get("type", "entity")), fill=(220, 30, 30))
-        self.output_dir.mkdir(parents=True, exist_ok=True)
-        token = uuid.uuid4().hex[:10]; stem = safe_stem(filename)
-        result_path = self.output_dir / f"{stem}_{token}_{mode}.png"
-        preview_path = self.output_dir / f"{stem}_{token}_preview.png"
-        mask_path = self.output_dir / f"{stem}_{token}_mask.png"
-        result.save(result_path); preview.save(preview_path); mask.save(mask_path)
+        preview.save(preview_path)
+        if stage_timings is not None:
+            stage_timings["preview_generation"] = time.perf_counter() - preview_started
         return {"result_path": str(result_path), "preview_path": str(preview_path), "mask_path": str(mask_path)}
 
     @staticmethod

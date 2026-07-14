@@ -1,4 +1,9 @@
+import sys
+import time
+from collections import OrderedDict
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from types import SimpleNamespace
 
 import numpy as np
 import pytest
@@ -48,6 +53,41 @@ def test_ocr_failure_returns_empty(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(service, "_get_engine", lambda: (_ for _ in ()).throw(RuntimeError("offline")))
     assert service.recognize(Image.new("RGB", (20, 20), "white")) == []
     assert "OCR 识别失败" in service.last_warning
+
+
+def test_ocr_engine_is_initialized_once_under_concurrency(monkeypatch: pytest.MonkeyPatch) -> None:
+    created = []
+
+    class FakePaddleOcr:
+        def __init__(self, **kwargs) -> None:
+            time.sleep(0.02)
+            created.append(kwargs)
+
+    monkeypatch.setitem(sys.modules, "paddleocr", SimpleNamespace(PaddleOCR=FakePaddleOcr))
+    monkeypatch.setattr(OcrService, "_engine", None)
+    monkeypatch.setattr(OcrService, "_engine_init_count", 0)
+    service = OcrService({"cache_enabled": False})
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        engines = list(executor.map(lambda _: service._get_engine(), range(8)))
+    assert len({id(engine) for engine in engines}) == 1
+    assert len(created) == 1
+    assert OcrService.initialization_count() == 1
+
+
+def test_memory_cache_is_bounded_and_does_not_write_disk(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    class FakeEngine:
+        def predict(self, image):
+            return []
+
+    monkeypatch.setattr(OcrService, "_cache", OrderedDict())
+    service = OcrService({"cache_enabled": True, "cache_max_entries": 2, "cache_ttl_seconds": 60, "max_image_side": 100}, cache_root=tmp_path / "disk-cache")
+    monkeypatch.setattr(service, "_get_engine", lambda: FakeEngine())
+    for value in (10, 20, 30):
+        service.recognize(Image.new("RGB", (20, 20), (value, value, value)))
+    assert OcrService.cache_size() == 2
+    service.recognize(Image.new("RGB", (20, 20), (30, 30, 30)))
+    assert service.last_cache_hit is True
+    assert not (tmp_path / "disk-cache").exists()
 
 
 @pytest.mark.integration

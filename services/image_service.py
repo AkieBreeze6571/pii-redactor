@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from pathlib import Path
+import time
 from typing import Any
 
 import cv2
@@ -51,12 +52,17 @@ def preprocess_image(
     sharpen: bool = False,
     binarize: bool = False,
     array_color: str = "bgr",
+    stage_timings: dict[str, float] | None = None,
 ) -> PreprocessedImage:
     warnings: list[str] = []
+    decode_started = time.perf_counter()
     try:
         image = ImageOps.exif_transpose(load_image(value, array_color))
     except (OSError, ValueError, TypeError, UnidentifiedImageError) as exc:
         raise ValueError(f"图片无法读取：{exc}") from exc
+    if stage_timings is not None:
+        stage_timings["image_decode"] = time.perf_counter() - decode_started
+    preprocess_started = time.perf_counter()
     original_size = image.size
     if image.mode == "RGBA":
         background = Image.new("RGBA", image.size, "white")
@@ -83,6 +89,8 @@ def preprocess_image(
     ratio = min(1.0, max_side / max(width, height)) if max_side > 0 else 1.0
     if ratio < 1:
         image = image.resize((max(1, round(width * ratio)), max(1, round(height * ratio))), Image.Resampling.LANCZOS)
+    if stage_timings is not None:
+        stage_timings["image_preprocess"] = time.perf_counter() - preprocess_started
     return PreprocessedImage(
         image=image,
         original_size=original_size,

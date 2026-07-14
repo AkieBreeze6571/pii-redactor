@@ -32,6 +32,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from training.callbacks import EarlyStopping
 from training.dataset import NerDataset, count_bio_classes, load_records
 from training.metrics import bio_to_spans, compute_entity_metrics
+from utils.logger import configure_logging
 
 
 def set_seed(seed: int) -> None:
@@ -186,6 +187,7 @@ def sync_best(run_dir: Path, best_dir: Path) -> None:
 
 
 def main() -> int:
+    configure_logging("training.log")
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="backslashreplace")
     args = parse_args()

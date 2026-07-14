@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import time
 from typing import Any
 
 from services.context_detector import ContextDetector
@@ -65,14 +66,47 @@ class HybridDetector:
     def model_source(self) -> str:
         return self.ner_detector.model_source
 
-    def detect(self, text: str, enabled_types: set[str] | None = None, thresholds: dict[str, float] | None = None) -> list[dict[str, Any]]:
+    def detect_with_details(self, text: str, enabled_types: set[str] | None = None, thresholds: dict[str, float] | None = None) -> dict[str, Any]:
+        """Run each detector once and expose the existing intermediate UI results."""
+
         if not text:
-            return []
+            return {
+                "rules": [], "ner": [], "context": [], "final": [],
+                "timing": {"detection": 0.0, "ner": 0.0, "fusion": 0.0},
+                "counts": {"ner_calls": 0},
+            }
+        detection_started = time.perf_counter()
         rules = self.rule_detector.detect(text)
+        rule_seconds = time.perf_counter() - detection_started
+
+        ner_started = time.perf_counter()
         ner_raw = self.ner_detector.detect(text, thresholds)
+        ner_seconds = time.perf_counter() - ner_started
+
+        detection_started = time.perf_counter()
         if thresholds:
-            ner_raw = [item for item in ner_raw if float(item.get("confidence", 0)) >= thresholds.get(item["type"], 0.0)]
-        ner = self.context_detector.enhance(text, ner_raw)
+            ner_for_fusion = [item for item in ner_raw if float(item.get("confidence", 0)) >= thresholds.get(item["type"], 0.0)]
+        else:
+            ner_for_fusion = ner_raw
+        ner = self.context_detector.enhance(text, ner_for_fusion)
         context = self.context_detector.detect(text)
+        detection_seconds = rule_seconds + time.perf_counter() - detection_started
+
+        fusion_started = time.perf_counter()
         fused = fuse_entities(rules + ner + context)
-        return [item for item in fused if enabled_types is None or item["type"] in enabled_types]
+        final = [item for item in fused if enabled_types is None or item["type"] in enabled_types]
+        return {
+            "rules": rules,
+            "ner": ner_raw,
+            "context": context,
+            "final": final,
+            "timing": {
+                "detection": detection_seconds,
+                "ner": ner_seconds,
+                "fusion": time.perf_counter() - fusion_started,
+            },
+            "counts": {"ner_calls": 1},
+        }
+
+    def detect(self, text: str, enabled_types: set[str] | None = None, thresholds: dict[str, float] | None = None) -> list[dict[str, Any]]:
+        return self.detect_with_details(text, enabled_types, thresholds)["final"]

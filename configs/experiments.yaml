@@ -1,0 +1,10 @@
+train_config: configs/train_config.yaml
+experiments: []
+
+# Add explicit experiments before running. No Cartesian product is generated.
+# experiments:
+#   - name: macbert_lr2e5
+#     model: hfl/chinese-macbert-base
+#     learning_rate: 2.0e-5
+#     batch_size: 8
+#     max_length: 256

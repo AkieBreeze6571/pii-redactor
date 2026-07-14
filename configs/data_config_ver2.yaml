@@ -1,0 +1,37 @@
+raw:
+  search_root: data/raw
+  formal_patterns:
+    - "**/formal.jsonl"
+    - "**/pii_bench_zh.jsonl"
+  chat_patterns:
+    - "**/chat.jsonl"
+    - "**/pii_bench_zh_chat.jsonl"
+  license: Apache-2.0
+  schema:
+    id_fields: [id, sample_id]
+    text_fields: [text, content]
+    entities_fields: [entities, labels]
+    entity_type_fields: [type, label]
+    entity_text_fields: [text, value]
+    start_fields: [start, start_offset]
+    end_fields: [end, end_offset]
+
+processed:
+  output_dir: data/processed/ver2
+  train_ratio: 0.8
+  validation_ratio: 0.1
+  test_ratio: 0.1
+  seed: 42
+  freeze_test: true
+
+labels:
+  map_path: configs/label_map.json
+  unknown_label_policy: report
+
+deduplication:
+  enabled: true
+  normalize_outer_whitespace: true
+  remove_internal_whitespace: false
+
+reports:
+  output_dir: reports

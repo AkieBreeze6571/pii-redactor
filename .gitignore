@@ -24,7 +24,10 @@ data/cache/
 !data/cache/
 data/cache/*
 !data/cache/.gitkeep
+data/local_regression/
 data/*.db
+data/*.db-shm
+data/*.db-wal
 
 # Models, logs, and reports
 checkpoints/

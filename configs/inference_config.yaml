@@ -17,10 +17,19 @@ fusion:
   overlap_threshold: 0.5
 
 mapping:
-  horizontal_padding: 5
-  vertical_padding: 3
-  minimum_box_width: 3
-  minimum_box_height: 3
+  strategy: ink_refined
+  safety_mode: strict
+  horizontal_padding: 8
+  vertical_padding: 5
+  minimum_box_width: 4
+  minimum_box_height: 4
+  low_confidence_fallback: full_block
+  minimum_mapping_confidence: 0.72
+  minimum_component_match_ratio: 0.70
+  ink_refinement_enabled: true
+  projection_refinement_enabled: true
+  component_gap_ratio: 0.45
+  maximum_overcover_ratio: 0.35
 
 ocr:
   language: ch
