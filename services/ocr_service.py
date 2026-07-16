@@ -6,6 +6,7 @@ import copy
 import hashlib
 import json
 import logging
+import sys
 import time
 from collections import OrderedDict
 from pathlib import Path
@@ -20,6 +21,10 @@ from services.image_service import PreprocessedImage, preprocess_image
 
 
 LOGGER = logging.getLogger(__name__)
+
+DEFAULT_OCR_VERSION = "PP-OCRv6"
+DEFAULT_DETECTION_MODEL = "PP-OCRv6_medium_det"
+DEFAULT_RECOGNITION_MODEL = "PP-OCRv6_medium_rec"
 
 
 def parse_ocr_result(result: Any, scale_x: float = 1.0, scale_y: float = 1.0) -> list[dict[str, Any]]:
@@ -141,22 +146,96 @@ class OcrService:
         except (ImportError, AttributeError, RuntimeError):
             return "initialized_unknown"
 
-    def _get_engine(self) -> Any:
-        if self.__class__._engine is not None:
-            return self.__class__._engine
-        with self._engine_lock:
-            if self.__class__._engine is None:
-                from paddleocr import PaddleOCR
-                engine = PaddleOCR(
-                    lang=self.config.get("language", "ch"),
-                    use_doc_orientation_classify=False,
-                    use_doc_unwarping=False,
-                    use_textline_orientation=bool(self.config.get("use_angle_cls", True)),
-                    enable_mkldnn=False,
+    def _engine_kwargs(self) -> dict[str, Any]:
+        config = self.config
+        kwargs: dict[str, Any] = {
+            "use_doc_orientation_classify": bool(
+                config.get("use_doc_orientation_classify", False)
+            ),
+            "use_doc_unwarping": bool(config.get("use_doc_unwarping", False)),
+            "use_textline_orientation": bool(
+                config.get(
+                    "use_textline_orientation",
+                    config.get("use_angle_cls", True),
                 )
-                self.__class__._engine = engine
-                self.__class__._engine_init_count += 1
-        return self.__class__._engine
+            ),
+            "enable_mkldnn": bool(config.get("enable_mkldnn", False)),
+            "cpu_threads": int(config.get("cpu_threads", 8)),
+        }
+
+        model_options = {
+            "text_detection_model_name": config.get(
+                "text_detection_model_name", DEFAULT_DETECTION_MODEL
+            ),
+            "text_detection_model_dir": config.get("text_detection_model_dir"),
+            "text_recognition_model_name": config.get(
+                "text_recognition_model_name", DEFAULT_RECOGNITION_MODEL
+            ),
+            "text_recognition_model_dir": config.get("text_recognition_model_dir"),
+        }
+        explicit_model_selection = any(model_options.values())
+        kwargs.update(
+            (name, str(value))
+            for name, value in model_options.items()
+            if value not in (None, "")
+        )
+        if not explicit_model_selection:
+            kwargs["lang"] = str(config.get("language", "ch"))
+            kwargs["ocr_version"] = str(
+                config.get("ocr_version", DEFAULT_OCR_VERSION)
+            )
+
+        optional_options = {
+            "text_det_limit_side_len": int,
+            "text_det_limit_type": str,
+            "text_det_thresh": float,
+            "text_det_box_thresh": float,
+            "text_det_unclip_ratio": float,
+            "text_rec_score_thresh": float,
+        }
+        for name, converter in optional_options.items():
+            value = config.get(name)
+            if value is not None:
+                kwargs[name] = converter(value)
+
+        device = config.get("device")
+        if device not in (None, "", "auto"):
+            kwargs["device"] = str(device)
+        return kwargs
+
+    def _get_engine(self) -> Any:
+        cls = self.__class__
+
+        if cls._engine is not None:
+            return cls._engine
+
+        with cls._engine_lock:
+            if cls._engine is None:
+                # PaddleOCR imports ModelScope, which imports torch after Paddle.
+                # Loading torch first avoids a Windows DLL resolution conflict.
+                if sys.platform == "win32" and "paddleocr" not in sys.modules:
+                    import torch  # noqa: F401
+
+                from paddleocr import PaddleOCR
+
+                engine_kwargs = self._engine_kwargs()
+                engine = PaddleOCR(**engine_kwargs)
+
+                cls._engine = engine
+                cls._engine_init_count += 1
+
+                LOGGER.info(
+                    "OCR engine initialized "
+                    "version=%s det_model=%s rec_model=%s "
+                    "device=%s config_version=%s",
+                    self.config.get("ocr_version", DEFAULT_OCR_VERSION),
+                    engine_kwargs.get("text_detection_model_name"),
+                    engine_kwargs.get("text_recognition_model_name"),
+                    engine_kwargs.get("device", "auto"),
+                    self.config.get("config_version"),
+                )
+
+        return cls._engine
 
     def recognize(self, image: Any) -> list[dict[str, Any]]:
         self.last_cache_hit = False

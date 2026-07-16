@@ -221,6 +221,7 @@ data/raw
 | `docs/architecture.md` | 模块边界、端到端架构和主要限制 | 服务关系或核心算法变化 |
 | `docs/data_pipeline.md` | 文本、合成图片、固定集和 MultiPriv 数据流程 | schema、manifest、split 变化 |
 | `docs/dataset_input_guide.md` | 自有文本、图片和外部数据的目录、JSONL schema、span/box 规范与接入流程 | 数据入口、字段契约或验证方式变化 |
+| `docs/project_defense_guide.md` | 面向项目答辩的完整介绍、技术原理、实验解释、局限和常见问答 | 核心架构、算法、当前最佳模型或验收结果变化 |
 | `docs/model_training.md` | 训练配置、run 管理和现有模型说明 | 训练流程或模型选择方式变化 |
 | `docs/image_evaluation.md` | 图片指标、冻结基线和安全解释 | 新评测版本或指标定义变化 |
 | `docs/deployment.md` | Python/CUDA、本地启动、路径和日志 | 依赖、环境变量或部署方式变化 |

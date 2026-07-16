@@ -7,6 +7,7 @@ from types import SimpleNamespace
 
 import numpy as np
 import pytest
+import yaml
 from PIL import Image
 
 from services.image_service import preprocess_image
@@ -72,6 +73,49 @@ def test_ocr_engine_is_initialized_once_under_concurrency(monkeypatch: pytest.Mo
     assert len({id(engine) for engine in engines}) == 1
     assert len(created) == 1
     assert OcrService.initialization_count() == 1
+    assert created[0]["text_detection_model_name"] == "PP-OCRv6_medium_det"
+    assert created[0]["text_recognition_model_name"] == "PP-OCRv6_medium_rec"
+    assert "lang" not in created[0]
+    assert "ocr_version" not in created[0]
+
+
+def test_v6_medium_engine_kwargs_use_current_orientation_option() -> None:
+    service = OcrService(
+        {
+            "language": "ch",
+            "ocr_version": "PP-OCRv6",
+            "text_detection_model_name": "PP-OCRv6_medium_det",
+            "text_recognition_model_name": "PP-OCRv6_medium_rec",
+            "use_textline_orientation": False,
+            "use_angle_cls": True,
+            "device": "cpu",
+        }
+    )
+
+    kwargs = service._engine_kwargs()
+
+    assert kwargs["use_textline_orientation"] is False
+    assert kwargs["device"] == "cpu"
+    assert "lang" not in kwargs
+    assert "ocr_version" not in kwargs
+
+
+def test_version_selector_is_used_when_explicit_models_are_disabled() -> None:
+    service = OcrService(
+        {
+            "language": "ch",
+            "ocr_version": "PP-OCRv6",
+            "text_detection_model_name": None,
+            "text_recognition_model_name": None,
+        }
+    )
+
+    kwargs = service._engine_kwargs()
+
+    assert kwargs["lang"] == "ch"
+    assert kwargs["ocr_version"] == "PP-OCRv6"
+    assert "text_detection_model_name" not in kwargs
+    assert "text_recognition_model_name" not in kwargs
 
 
 def test_memory_cache_is_bounded_and_does_not_write_disk(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -95,7 +139,10 @@ def test_real_paddleocr_on_generated_image() -> None:
     images = list(Path("data/generated/images/test").glob("*.png"))
     if not images:
         pytest.skip("没有本地合成测试图")
-    service = OcrService({"language": "ch", "max_image_side": 2400, "use_angle_cls": False, "cache_enabled": True, "config_version": 1})
+    config = yaml.safe_load(
+        Path("configs/inference_config.yaml").read_text(encoding="utf-8")
+    )["ocr"]
+    service = OcrService(config)
     blocks = service.recognize(images[0])
     assert blocks
     assert all(block["text"] and len(block["polygon"]) == 4 for block in blocks)

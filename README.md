@@ -109,7 +109,7 @@ python -m pytest -v -m integration
 - `data/outputs`、`data/app.db`
 - `reports`、`logs`
 
-详细说明见 [项目学习与修改指南](docs/project_learning_guide.md)、[自有数据接入指南](docs/dataset_input_guide.md)、[架构](docs/architecture.md)、[数据流程](docs/data_pipeline.md)、[模型训练](docs/model_training.md)、[图像评测](docs/image_evaluation.md)、[部署](docs/deployment.md) 和 [Git 协作](docs/git_collaboration.md)。
+详细说明见 [项目答辩与技术原理详解](docs/project_defense_guide.md)、[项目学习与修改指南](docs/project_learning_guide.md)、[自有数据接入指南](docs/dataset_input_guide.md)、[架构](docs/architecture.md)、[数据流程](docs/data_pipeline.md)、[模型训练](docs/model_training.md)、[图像评测](docs/image_evaluation.md)、[部署](docs/deployment.md) 和 [Git 协作](docs/git_collaboration.md)。
 
 ## 许可证和责任边界
 

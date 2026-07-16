@@ -1,0 +1,636 @@
+{"kind":"deck","id":"pr/jgx5ly","name":"Deck"}
+{"kind":"layout","layoutId":"72e0a849-0abb-4390-a753-b930b908632c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"bb9e1a5d-322f-40e0-8691-f5f551c4d7c1","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/6s6pq6","slide":1,"title":"DOCUMENT PRIVACY / 2026","textShapes":8}
+{"kind":"shape","id":"sh/sj2tw76t","slide":1,"bbox":[0,0,18,720]}
+{"kind":"shape","id":"sh/7itc32p8","slide":1,"bbox":[770,0,510,720]}
+{"kind":"shape","id":"sh/h8bu9c7a","slide":1,"bbox":[720,126,12,320]}
+{"kind":"textbox","id":"sh/g72t076p","slide":1,"text":"DOCUMENT PRIVACY / 2026","textPreview":"DOCUMENT PRIVACY / 2026","textChars":23,"textLines":1,"bbox":[64,56,400,26]}
+{"kind":"textbox","id":"sh/f6tc72p4","slide":1,"text":"文档敏感信息\n智能检测与脱敏系统","textPreview":"文档敏感信息 | 智能检测与脱敏系统","textChars":16,"textLines":2,"bbox":[64,132,620,170]}
+{"kind":"textbox","id":"sh/u5kbyxoj","slide":1,"text":"基于 OCR、NER 与图像打码的隐私保护工具","textPreview":"基于 OCR、NER 与图像打码的隐私保护工具","textChars":23,"textLines":1,"bbox":[68,323,570,42]}
+{"kind":"shape","id":"sh/pcvudw76","slide":1,"bbox":[68,392,390,0]}
+{"kind":"textbox","id":"sh/4bmt4r61","slide":1,"text":"姓名：__________\n项目时间：2026 年 7 月\n学校 / 课程：__________","textPreview":"姓名：__________ | 项目时间：2026 年 7 月 | 学校 / 课程：__________","textChars":48,"textLines":3,"bbox":[68,438,500,115]}
+{"kind":"textbox","id":"sh/yl83qt8b","slide":1,"text":"LOCAL-FIRST","textPreview":"LOCAL-FIRST","textChars":11,"textLines":1,"bbox":[770,496,180,30]}
+{"kind":"textbox","id":"sh/j6hkjy9w","slide":1,"text":"OCR → ENTITY → REGION → REDACTION","textPreview":"OCR → ENTITY → REGION → REDACTION","textChars":33,"textLines":1,"bbox":[770,535,430,30]}
+{"kind":"textbox","id":"sh/k7alc3qh","slide":1,"text":"可训练 · 可评测 · 可追溯 · 可人工复核","textPreview":"可训练 · 可评测 · 可追溯 · 可人工复核","textChars":23,"textLines":1,"bbox":[770,578,430,28]}
+{"kind":"textbox","id":"sh/l8j2l872","slide":1,"text":"PII-REDACTOR","textPreview":"PII-REDACTOR","textChars":12,"textLines":1,"bbox":[68,660,300,22]}
+{"kind":"image","id":"im/jqdkrals","slide":1,"name":"","geometry":"rect","alt":"Synthetic document with entity boxes","bbox":[720,126,560,320]}
+{"kind":"notes","id":"nt/6s6pq6","slide":1,"text":""}
+{"kind":"slide","id":"sl/q2wcg1","slide":2,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":26}
+{"kind":"shape","id":"sh/1o3q5o3i","slide":2,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/e1s7a94r","slide":2,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/zml83e5c","slide":2,"text":"敏感信息散落在每一种非结构化文档中","textPreview":"敏感信息散落在每一种非结构化文档中","textChars":17,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/orupg3m9","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/9s3q9o3e","slide":2,"bbox":[56,142,252,70]}
+{"kind":"textbox","id":"sh/mpc7et43","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[70,157,38,26]}
+{"kind":"textbox","id":"sh/nql87ylo","slide":2,"text":"纸质表单","textPreview":"纸质表单","textChars":4,"textLines":1,"bbox":[114,151,175,36]}
+{"kind":"shape","id":"sh/4vap4zmp","slide":2,"bbox":[348,142,252,70]}
+{"kind":"textbox","id":"sh/pwj6x4na","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[362,157,38,26]}
+{"kind":"textbox","id":"sh/t8ri5c7q","slide":2,"text":"聊天截图","textPreview":"聊天截图","textChars":4,"textLines":1,"bbox":[406,151,175,36]}
+{"kind":"shape","id":"sh/s7i1w765","slide":2,"bbox":[640,142,252,70]}
+{"kind":"textbox","id":"sh/rm9032pk","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[654,157,38,26]}
+{"kind":"textbox","id":"sh/6l0juxoz","slide":2,"text":"扫描件","textPreview":"扫描件","textChars":3,"textLines":1,"bbox":[698,151,175,36]}
+{"kind":"shape","id":"sh/1cb29c7m","slide":2,"bbox":[932,142,252,70]}
+{"kind":"textbox","id":"sh/gb210761","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[946,157,38,26]}
+{"kind":"textbox","id":"sh/fa9072pg","slide":2,"text":"业务登记表","textPreview":"业务登记表","textChars":5,"textLines":1,"bbox":[990,151,175,36]}
+{"kind":"textbox","id":"sh/e90jyhob","slide":2,"text":"姓名 · 电话 · 地址 · 身份证 · 邮箱 · 银行卡","textPreview":"姓名 · 电话 · 地址 · 身份证 · 邮箱 · 银行卡","textChars":29,"textLines":1,"bbox":[56,243,800,40]}
+{"kind":"textbox","id":"sh/pgb2dw7y","slide":2,"text":"人工打码把“识别”和“定位”都交给人完成，规模越大，漏打风险越高。","textPreview":"人工打码把“识别”和“定位”都交给人完成，规模越大，漏打风险越高。","textChars":33,"textLines":1,"bbox":[56,292,900,34]}
+{"kind":"shape","id":"sh/of214r6d","slide":2,"bbox":[56,363,207,196]}
+{"kind":"shape","id":"sh/8vudwzil","slide":2,"bbox":[56,363,207,8]}
+{"kind":"textbox","id":"sh/9w3upkz6","slide":2,"text":"效率","textPreview":"效率","textChars":2,"textLines":1,"bbox":[74,390,170,38]}
+{"kind":"textbox","id":"sh/mtcbup0f","slide":2,"text":"逐张查找、逐处涂黑","textPreview":"逐张查找、逐处涂黑","textChars":9,"textLines":1,"bbox":[74,447,168,76]}
+{"kind":"shape","id":"sh/nulcnuh0","slide":2,"bbox":[287,363,207,196]}
+{"kind":"shape","id":"sh/wzed0zix","slide":2,"bbox":[287,363,207,8]}
+{"kind":"textbox","id":"sh/x0nut4zi","slide":2,"text":"漏检","textPreview":"漏检","textChars":2,"textLines":1,"bbox":[305,390,170,38]}
+{"kind":"textbox","id":"sh/axcvyp0r","slide":2,"text":"细小字段或跨行信息易被忽略","textPreview":"细小字段或跨行信息易被忽略","textChars":13,"textLines":1,"bbox":[305,447,168,76]}
+{"kind":"shape","id":"sh/vylcruhc","slide":2,"bbox":[518,363,207,196]}
+{"kind":"shape","id":"sh/c3atofid","slide":2,"bbox":[518,363,207,8]}
+{"kind":"textbox","id":"sh/d4juh0zy","slide":2,"text":"批量","textPreview":"批量","textChars":2,"textLines":1,"bbox":[536,390,170,38]}
+{"kind":"textbox","id":"sh/fipgni1g","slide":2,"text":"缺少统一输出与失败隔离","textPreview":"缺少统一输出与失败隔离","textChars":11,"textLines":1,"bbox":[536,447,168,76]}
+{"kind":"shape","id":"sh/uhgfudkv","slide":2,"bbox":[749,363,207,196]}
+{"kind":"shape","id":"sh/1kryp8jm","slide":2,"bbox":[749,363,207,8]}
+{"kind":"textbox","id":"sh/gjixwn21","slide":2,"text":"OCR","textPreview":"OCR","textChars":3,"textLines":1,"bbox":[767,390,170,38]}
+{"kind":"textbox","id":"sh/7upwjy1k","slide":2,"text":"错字会沿检测链路传播","textPreview":"错字会沿检测链路传播","textChars":10,"textLines":1,"bbox":[767,447,168,76]}
+{"kind":"shape","id":"sh/6tgfqtkz","slide":2,"bbox":[980,363,207,196]}
+{"kind":"shape","id":"sh/tg7el8jq","slide":2,"bbox":[980,363,207,8]}
+{"kind":"textbox","id":"sh/sfyxs325","slide":2,"text":"复杂成像","textPreview":"复杂成像","textChars":4,"textLines":1,"bbox":[998,390,170,38]}
+{"kind":"textbox","id":"sh/jq5wfy18","slide":2,"text":"手写、倾斜、阴影、低清晰度","textPreview":"手写、倾斜、阴影、低清晰度","textChars":13,"textLines":1,"bbox":[998,447,168,76]}
+{"kind":"shape","id":"sh/ipwfmtk3","slide":2,"bbox":[56,590,1168,54]}
+{"kind":"textbox","id":"sh/yx0jqhgn","slide":2,"text":"核心矛盾：检测到敏感实体，不代表已经在原图上完整遮挡。","textPreview":"核心矛盾：检测到敏感实体，不代表已经在原图上完整遮挡。","textChars":27,"textLines":1,"bbox":[80,601,1120,34]}
+{"kind":"shape","id":"sh/zy90zmxs","slide":2,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/kzi1sryd","slide":2,"text":"问题定义：实体识别 + 图像区域完整覆盖","textPreview":"问题定义：实体识别 + 图像区域完整覆盖","textChars":20,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/l0ri1wfy","slide":2,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/q2wcg1","slide":2,"text":""}
+{"kind":"slide","id":"sl/giyfez","slide":3,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":34}
+{"kind":"shape","id":"sh/uloru1g7","slide":3,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/hozq5wfi","slide":3,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/gn69wryd","slide":3,"text":"目标不是模型 Demo，而是可运行的产品闭环","textPreview":"目标不是模型 Demo，而是可运行的产品闭环","textChars":22,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/3qh876xo","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/2p8ry1g3","slide":3,"bbox":[56,140,354,124]}
+{"kind":"textbox","id":"sh/pczq9gfu","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[68,152,42,30]}
+{"kind":"textbox","id":"sh/4rq90by9","slide":3,"text":"图片上传","textPreview":"图片上传","textChars":4,"textLines":1,"bbox":[110,151,288,32]}
+{"kind":"textbox","id":"sh/jud8v2xk","slide":3,"text":"多格式输入","textPreview":"多格式输入","textChars":5,"textLines":1,"bbox":[74,190,318,66]}
+{"kind":"shape","id":"sh/it47mhgz","slide":3,"bbox":[446,140,354,124]}
+{"kind":"textbox","id":"sh/czi1sjad","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[458,152,42,30]}
+{"kind":"textbox","id":"sh/d0r2lory","slide":3,"text":"OCR 识别","textPreview":"OCR 识别","textChars":6,"textLines":1,"bbox":[500,151,288,32]}
+{"kind":"textbox","id":"sh/qxgjq9sn","slide":3,"text":"文字 + 坐标","textPreview":"文字 + 坐标","textChars":7,"textLines":1,"bbox":[464,190,318,66]}
+{"kind":"shape","id":"sh/by9kje98","slide":3,"bbox":[836,140,354,124]}
+{"kind":"textbox","id":"sh/03i1wjap","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[848,152,42,30]}
+{"kind":"textbox","id":"sh/l4r2pora","slide":3,"text":"实体检测","textPreview":"实体检测","textChars":4,"textLines":1,"bbox":[890,151,288,32]}
+{"kind":"textbox","id":"sh/y10jutsj","slide":3,"text":"规则 + NER","textPreview":"规则 + NER","textChars":8,"textLines":1,"bbox":[854,190,318,66]}
+{"kind":"shape","id":"sh/z29kny94","slide":3,"bbox":[56,290,354,124]}
+{"kind":"textbox","id":"sh/g7y1kzal","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[68,302,42,30]}
+{"kind":"textbox","id":"sh/1872d4bq","slide":3,"text":"坐标映射","textPreview":"坐标映射","textChars":4,"textLines":1,"bbox":[110,301,288,32]}
+{"kind":"textbox","id":"sh/xcfq1wzi","slide":3,"text":"字符回到像素","textPreview":"字符回到像素","textChars":6,"textLines":1,"bbox":[74,340,318,66]}
+{"kind":"shape","id":"sh/wb698ryx","slide":3,"bbox":[446,290,354,124]}
+{"kind":"textbox","id":"sh/vqx8zmhc","slide":3,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[458,302,42,30]}
+{"kind":"textbox","id":"sh/ap4r6hgr","slide":3,"text":"自动打码","textPreview":"自动打码","textChars":4,"textLines":1,"bbox":[500,301,288,32]}
+{"kind":"textbox","id":"sh/5gfq5gze","slide":3,"text":"黑框 / 马赛克 / 模糊","textPreview":"黑框 / 马赛克 / 模糊","textChars":13,"textLines":1,"bbox":[464,340,318,66]}
+{"kind":"shape","id":"sh/kf69cby9","slide":3,"bbox":[836,290,354,124]}
+{"kind":"textbox","id":"sh/jex836ho","slide":3,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[848,302,42,30]}
+{"kind":"textbox","id":"sh/idora1g3","slide":3,"text":"人工复核","textPreview":"人工复核","textChars":4,"textLines":1,"bbox":[890,301,288,32]}
+{"kind":"textbox","id":"sh/tkzq9gzq","slide":3,"text":"实体可取消","textPreview":"实体可取消","textChars":5,"textLines":1,"bbox":[854,340,318,66]}
+{"kind":"shape","id":"sh/sjq9gby5","slide":3,"bbox":[56,440,354,124]}
+{"kind":"textbox","id":"sh/qp0nudwn","slide":3,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[68,452,42,30]}
+{"kind":"textbox","id":"sh/bqto3ix8","slide":3,"text":"批量处理","textPreview":"批量处理","textChars":4,"textLines":1,"bbox":[110,451,288,32]}
+{"kind":"textbox","id":"sh/cr25wnet","slide":3,"text":"故障隔离","textPreview":"故障隔离","textChars":4,"textLines":1,"bbox":[74,490,318,66]}
+{"kind":"shape","id":"sh/dsb65sfe","slide":3,"bbox":[446,440,354,124]}
+{"kind":"textbox","id":"sh/ytknydwj","slide":3,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[458,452,42,30]}
+{"kind":"textbox","id":"sh/zuto7ix4","slide":3,"text":"历史记录","textPreview":"历史记录","textChars":4,"textLines":1,"bbox":[500,451,288,32]}
+{"kind":"textbox","id":"sh/0v250nep","slide":3,"text":"SQLite 可检索","textPreview":"SQLite 可检索","textChars":10,"textLines":1,"bbox":[464,490,318,66]}
+{"kind":"shape","id":"sh/lwb69sfa","slide":3,"bbox":[836,440,354,124]}
+{"kind":"textbox","id":"sh/mxkn2xwv","slide":3,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[848,452,42,30]}
+{"kind":"textbox","id":"sh/nidob2xg","slide":3,"text":"测试评估","textPreview":"测试评估","textChars":4,"textLines":1,"bbox":[890,451,288,32]}
+{"kind":"textbox","id":"sh/ve9ov2pk","slide":3,"text":"报告可追溯","textPreview":"报告可追溯","textChars":5,"textLines":1,"bbox":[854,490,318,66]}
+{"kind":"textbox","id":"sh/ud0nmxoz","slide":3,"text":"MVP 验收标准","textPreview":"MVP 验收标准","textChars":8,"textLines":1,"bbox":[56,614,190,26]}
+{"kind":"textbox","id":"sh/hgr6xs7q","slide":3,"text":"输入能处理 · 结果能解释 · 输出能下载 · 风险能暴露","textPreview":"输入能处理 · 结果能解释 · 输出能下载 · 风险能暴露","textChars":29,"textLines":1,"bbox":[250,612,910,30]}
+{"kind":"shape","id":"sh/wfi5o765","slide":3,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/j29oz2pg","slide":3,"text":"系统范围：图片、文本、批量、历史、模型、状态","textPreview":"系统范围：图片、文本、批量、历史、模型、状态","textChars":22,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/ih0nqxov","slide":3,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/giyfez","slide":3,"text":""}
+{"kind":"slide","id":"sl/39v7ex","slide":4,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":29}
+{"kind":"shape","id":"sh/o761oz6h","slide":4,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/36xkve5w","slide":4,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/254jm9ob","slide":4,"text":"七阶段流水线把视觉、语义与几何连接起来","textPreview":"七阶段流水线把视觉、语义与几何连接起来","textChars":19,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/h4v2t4nq","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/g3m1kz65","slide":4,"bbox":[46,191,104,90]}
+{"kind":"textbox","id":"sh/f2dkru5k","slide":4,"text":"输入图片","textPreview":"输入图片","textChars":4,"textLines":1,"bbox":[56,207,84,32]}
+{"kind":"textbox","id":"sh/u14jipof","slide":4,"text":"PNG / JPG","textPreview":"PNG / JPG","textChars":9,"textLines":1,"bbox":[54,245,88,24]}
+{"kind":"shape","id":"sh/l0z25onu","slide":4,"bbox":[178,191,130,90]}
+{"kind":"textbox","id":"sh/0zqlwjmp","slide":4,"text":"图像预处理","textPreview":"图像预处理","textChars":5,"textLines":1,"bbox":[188,207,110,32]}
+{"kind":"textbox","id":"sh/6t87id8r","slide":4,"text":"旋转 / 增强","textPreview":"旋转 / 增强","textChars":7,"textLines":1,"bbox":[186,245,114,24]}
+{"kind":"shape","id":"sh/7e18bi9c","slide":4,"bbox":[338,191,130,90]}
+{"kind":"textbox","id":"sh/sfapknqx","slide":4,"text":"OCR","textPreview":"OCR","textChars":3,"textLines":1,"bbox":[348,207,110,32]}
+{"kind":"textbox","id":"sh/tgjqdsri","slide":4,"text":"文本 + polygon","textPreview":"文本 + polygon","textChars":12,"textLines":1,"bbox":[346,245,114,24]}
+{"kind":"shape","id":"sh/ip87ed8v","slide":4,"bbox":[498,165,230,142]}
+{"kind":"textbox","id":"sh/jqh87i9g","slide":4,"text":"混合实体检测","textPreview":"混合实体检测","textChars":6,"textLines":1,"bbox":[508,181,210,32]}
+{"kind":"textbox","id":"sh/krqpg3q1","slide":4,"text":"候选融合","textPreview":"候选融合","textChars":4,"textLines":1,"bbox":[506,219,214,24]}
+{"kind":"shape","id":"sh/5szq98r6","slide":4,"bbox":[758,191,130,90]}
+{"kind":"textbox","id":"sh/2ls7qx8z","slide":4,"text":"坐标映射","textPreview":"坐标映射","textChars":4,"textLines":1,"bbox":[768,207,110,32]}
+{"kind":"textbox","id":"sh/3ml8j2pk","slide":4,"text":"span → box","textPreview":"span → box","textChars":10,"textLines":1,"bbox":[766,245,114,24]}
+{"kind":"shape","id":"sh/zqd4bupw","slide":4,"bbox":[918,191,134,90]}
+{"kind":"textbox","id":"sh/ep4nipob","slide":4,"text":"图像打码","textPreview":"图像打码","textChars":4,"textLines":1,"bbox":[928,207,114,32]}
+{"kind":"textbox","id":"sh/1svmd472","slide":4,"text":"3 种模式","textPreview":"3 种模式","textChars":5,"textLines":1,"bbox":[926,245,118,24]}
+{"kind":"shape","id":"sh/0rm5kz6h","slide":4,"bbox":[1082,191,150,90]}
+{"kind":"textbox","id":"sh/nud4fep8","slide":4,"text":"输出与审计","textPreview":"输出与审计","textChars":5,"textLines":1,"bbox":[1092,207,130,32]}
+{"kind":"textbox","id":"sh/mt4nm9on","slide":4,"text":"图 / Mask / JSON","textPreview":"图 / Mask / JSON","textChars":15,"textLines":1,"bbox":[1090,245,134,24]}
+{"kind":"shape","id":"sh/9wfmh47y","slide":4,"bbox":[150,236,28,0]}
+{"kind":"shape","id":"sh/8v65oj6t","slide":4,"bbox":[308,236,30,0]}
+{"kind":"shape","id":"sh/vyx4jep4","slide":4,"bbox":[468,236,30,0]}
+{"kind":"shape","id":"sh/axonq9oj","slide":4,"bbox":[728,236,30,0]}
+{"kind":"shape","id":"sh/snql0jmx","slide":4,"bbox":[888,236,30,0]}
+{"kind":"shape","id":"sh/tozm9o3i","slide":4,"bbox":[1052,236,30,0]}
+{"kind":"shape","id":"sh/61o3y94r","slide":4,"bbox":[460,355,118,92]}
+{"kind":"textbox","id":"sh/7mh47elc","slide":4,"text":"规则检测","textPreview":"规则检测","textChars":4,"textLines":1,"bbox":[468,367,102,26]}
+{"kind":"textbox","id":"sh/kz6lwjml","slide":4,"text":"号码 / 邮箱\n校验算法","textPreview":"号码 / 邮箱 | 校验算法","textChars":12,"textLines":2,"bbox":[468,400,102,38]}
+{"kind":"shape","id":"sh/50fm5o36","slide":4,"bbox":[590,355,118,92]}
+{"kind":"textbox","id":"sh/ixo3u94v","slide":4,"text":"MacBERT NER","textPreview":"MacBERT NER","textChars":11,"textLines":1,"bbox":[598,367,102,26]}
+{"kind":"textbox","id":"sh/jyx43el0","slide":4,"text":"姓名 / 地址\n语义实体","textPreview":"姓名 / 地址 | 语义实体","textChars":12,"textLines":2,"bbox":[598,400,102,38]}
+{"kind":"shape","id":"sh/wv6lszmp","slide":4,"bbox":[720,355,118,92]}
+{"kind":"textbox","id":"sh/xwfm143a","slide":4,"text":"上下文","textPreview":"上下文","textChars":3,"textLines":1,"bbox":[728,367,102,26]}
+{"kind":"textbox","id":"sh/1oradgfq","slide":4,"text":"关键词补充\n类型细化","textPreview":"关键词补充 | 类型细化","textChars":10,"textLines":2,"bbox":[728,400,102,38]}
+{"kind":"shape","id":"sh/0ni9kby5","slide":4,"bbox":[613,308,0,46]}
+{"kind":"shape","id":"sh/fm9sb6xk","slide":4,"bbox":[519,344,260,0]}
+{"kind":"shape","id":"sh/el0ri1gz","slide":4,"bbox":[519,344,0,11]}
+{"kind":"shape","id":"sh/psbahgfm","slide":4,"bbox":[649,344,0,11]}
+{"kind":"shape","id":"sh/or29obyh","slide":4,"bbox":[779,344,0,11]}
+{"kind":"textbox","id":"sh/nqtsf6xw","slide":4,"text":"运行时编排：DocumentProcessor","textPreview":"运行时编排：DocumentProcessor","textChars":23,"textLines":1,"bbox":[56,501,330,28]}
+{"kind":"textbox","id":"sh/2p0rm1gb","slide":4,"text":"Gradio UI 只调用服务层；SQLite 保存历史；BatchService 隔离单文件失败。","textPreview":"Gradio UI 只调用服务层；SQLite 保存历史；BatchService 隔离单文件失败。","textChars":50,"textLines":1,"bbox":[56,541,820,32]}
+{"kind":"shape","id":"sh/5w7a5wfi","slide":4,"bbox":[908,494,324,102]}
+{"kind":"textbox","id":"sh/4vy9cryx","slide":4,"text":"LOCAL FIRST","textPreview":"LOCAL FIRST","textChars":11,"textLines":1,"bbox":[930,510,280,26]}
+{"kind":"textbox","id":"sh/u1w7mxwv","slide":4,"text":"原始文档不上传第三方服务","textPreview":"原始文档不上传第三方服务","textChars":12,"textLines":1,"bbox":[930,548,280,30]}
+{"kind":"shape","id":"sh/v25ofidg","slide":4,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/g3epone1","slide":4,"text":"实现：services/document_processor.py · app.py","textPreview":"实现：services/document_processor.py · app.py","textChars":42,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/h4n6hsv6","slide":4,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/39v7ex","slide":4,"text":""}
+{"kind":"slide","id":"sl/bjeo1d","slide":5,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":28}
+{"kind":"shape","id":"sh/90nmh07u","slide":5,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/mxc3mloj","slide":5,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/nyl4fqp4","slide":5,"text":"混合技术栈按数据特性分工","textPreview":"混合技术栈按数据特性分工","textChars":12,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/0bulkb6d","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"textbox","id":"sh/lw3mdg7y","slide":5,"text":"01 / 看见","textPreview":"01 / 看见","textChars":7,"textLines":1,"bbox":[56,146,340,22]}
+{"kind":"textbox","id":"sh/y9c3ilo7","slide":5,"text":"OCR","textPreview":"OCR","textChars":3,"textLines":1,"bbox":[56,180,340,48]}
+{"kind":"shape","id":"sh/zalkbqps","slide":5,"bbox":[56,242,340,0]}
+{"kind":"textbox","id":"sh/c7algb6h","slide":5,"text":"PaddleOCR 提取文字、置信度与文本块位置","textPreview":"PaddleOCR 提取文字、置信度与文本块位置","textChars":24,"textLines":1,"bbox":[56,270,330,84]}
+{"kind":"textbox","id":"sh/d8j29g7m","slide":5,"text":"图片 → 文本","textPreview":"图片 → 文本","textChars":7,"textLines":1,"bbox":[56,375,330,30]}
+{"kind":"textbox","id":"sh/h8jqd0fa","slide":5,"text":"02 / 理解","textPreview":"02 / 理解","textChars":7,"textLines":1,"bbox":[448,146,340,22]}
+{"kind":"textbox","id":"sh/gnap4vep","slide":5,"text":"规则 + NER","textPreview":"规则 + NER","textChars":8,"textLines":1,"bbox":[448,180,340,48]}
+{"kind":"shape","id":"sh/fm18bqx4","slide":5,"bbox":[448,242,340,0]}
+{"kind":"textbox","id":"sh/uls72lwj","slide":5,"text":"格式实体走校验规则；语义实体走 MacBERT","textPreview":"格式实体走校验规则；语义实体走 MacBERT","textChars":23,"textLines":1,"bbox":[448,270,330,84]}
+{"kind":"textbox","id":"sh/tkzq9gfy","slide":5,"text":"文本 → 实体","textPreview":"文本 → 实体","textChars":7,"textLines":1,"bbox":[448,375,330,30]}
+{"kind":"textbox","id":"sh/sjqp0bed","slide":5,"text":"03 / 遮挡","textPreview":"03 / 遮挡","textChars":7,"textLines":1,"bbox":[840,146,340,22]}
+{"kind":"textbox","id":"sh/7ih876x8","slide":5,"text":"CV 映射","textPreview":"CV 映射","textChars":5,"textLines":1,"bbox":[840,180,340,48]}
+{"kind":"shape","id":"sh/6h87y1gn","slide":5,"bbox":[840,242,340,0]}
+{"kind":"textbox","id":"sh/5gzq5wf2","slide":5,"text":"OpenCV / Pillow 把字符 span 还原为像素区域","textPreview":"OpenCV / Pillow 把字符 span 还原为像素区域","textChars":32,"textLines":1,"bbox":[840,270,330,84]}
+{"kind":"textbox","id":"sh/kfqpwbyh","slide":5,"text":"实体 → 区域","textPreview":"实体 → 区域","textChars":7,"textLines":1,"bbox":[840,375,330,30]}
+{"kind":"shape","id":"sh/wbuh8vap","slide":5,"bbox":[56,453,1168,142]}
+{"kind":"shape","id":"sh/xcni10ra","slide":5,"bbox":[76,473,196,38]}
+{"kind":"textbox","id":"sh/a9cz65sj","slide":5,"text":"Python","textPreview":"Python","textChars":6,"textLines":1,"bbox":[84,480,180,24]}
+{"kind":"shape","id":"sh/valgzq94","slide":5,"bbox":[301,473,196,38]}
+{"kind":"textbox","id":"sh/87uh4vad","slide":5,"text":"PyTorch","textPreview":"PyTorch","textChars":7,"textLines":1,"bbox":[309,480,180,24]}
+{"kind":"shape","id":"sh/983yx0ry","slide":5,"bbox":[526,473,196,38]}
+{"kind":"textbox","id":"sh/m5cz2lsn","slide":5,"text":"Transformers","textPreview":"Transformers","textChars":12,"textLines":1,"bbox":[534,480,180,24]}
+{"kind":"shape","id":"sh/n6lgvq9s","slide":5,"bbox":[751,473,196,38]}
+{"kind":"textbox","id":"sh/s3ehgfqx","slide":5,"text":"MacBERT","textPreview":"MacBERT","textChars":7,"textLines":1,"bbox":[759,480,180,24]}
+{"kind":"shape","id":"sh/t47i9kr2","slide":5,"bbox":[976,473,196,38]}
+{"kind":"textbox","id":"sh/3y9kzetk","slide":5,"text":"PaddleOCR","textPreview":"PaddleOCR","textChars":9,"textLines":1,"bbox":[984,480,180,24]}
+{"kind":"shape","id":"sh/2x0j6tcz","slide":5,"bbox":[76,526,196,38]}
+{"kind":"textbox","id":"sh/p0r21oba","slide":5,"text":"OpenCV","textPreview":"OpenCV","textChars":6,"textLines":1,"bbox":[84,533,180,24]}
+{"kind":"shape","id":"sh/ozil8ju5","slide":5,"bbox":[301,526,196,38]}
+{"kind":"textbox","id":"sh/b29k3ytg","slide":5,"text":"Pillow","textPreview":"Pillow","textChars":6,"textLines":1,"bbox":[309,533,180,24]}
+{"kind":"shape","id":"sh/q103atcv","slide":5,"bbox":[526,526,196,38]}
+{"kind":"textbox","id":"sh/dob258bm","slide":5,"text":"Gradio","textPreview":"Gradio","textChars":6,"textLines":1,"bbox":[534,533,180,24]}
+{"kind":"shape","id":"sh/c32lc3a1","slide":5,"bbox":[751,526,196,38]}
+{"kind":"textbox","id":"sh/76pkrutc","slide":5,"text":"SQLite","textPreview":"SQLite","textChars":6,"textLines":1,"bbox":[759,533,180,24]}
+{"kind":"shape","id":"sh/65gjy9cr","slide":5,"bbox":[976,526,196,38]}
+{"kind":"textbox","id":"sh/y9k3e9kn","slide":5,"text":"pytest","textPreview":"pytest","textChars":6,"textLines":1,"bbox":[984,533,180,24]}
+{"kind":"textbox","id":"sh/jatk7e18","slide":5,"text":"设计原则：规则追求可解释，模型负责语义泛化，坐标模块承担安全边界。","textPreview":"设计原则：规则追求可解释，模型负责语义泛化，坐标模块承担安全边界。","textChars":33,"textLines":1,"bbox":[56,621,1100,30]}
+{"kind":"shape","id":"sh/kb2lgz2t","slide":5,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/lcb294jy","slide":5,"text":"技术栈来自当前 requirements 与运行环境","textPreview":"技术栈来自当前 requirements 与运行环境","textChars":26,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/6dk3i9kj","slide":5,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/bjeo1d","slide":5,"text":""}
+{"kind":"slide","id":"sl/nep6bh","slide":6,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":26}
+{"kind":"shape","id":"sh/10jm5g3m","slide":6,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/ed83u14v","slide":6,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/fe1k36lg","slide":6,"text":"两类数据回答两个不同问题","textPreview":"两类数据回答两个不同问题","textChars":12,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/sbqlsbm5","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/tcz21w3a","slide":6,"bbox":[56,139,545,345]}
+{"kind":"shape","id":"sh/6983q14z","slide":6,"bbox":[56,139,545,9]}
+{"kind":"textbox","id":"sh/rahkz6lk","slide":6,"text":"文本 NER 数据","textPreview":"文本 NER 数据","textChars":9,"textLines":1,"bbox":[82,170,300,35]}
+{"kind":"textbox","id":"sh/47qlormt","slide":6,"text":"PII Bench ZH + 扩充 formal/chat","textPreview":"PII Bench ZH + 扩充 formal/chat","textChars":29,"textLines":1,"bbox":[82,216,400,28]}
+{"kind":"shape","id":"sh/58z2xwne","slide":6,"bbox":[82,269,220,118]}
+{"kind":"shape","id":"sh/hg76lwva","slide":6,"bbox":[82,269,7,118]}
+{"kind":"textbox","id":"sh/wvypsrup","slide":6,"text":"TEXT RECORDS","textPreview":"TEXT RECORDS","textChars":12,"textLines":1,"bbox":[102,283,190,24]}
+{"kind":"textbox","id":"sh/vupojmd4","slide":6,"text":"40,000","textPreview":"40,000","textChars":6,"textLines":1,"bbox":[102,308,190,45]}
+{"kind":"textbox","id":"sh/utg7qhcz","slide":6,"text":"统一 JSONL","textPreview":"统一 JSONL","textChars":8,"textLines":1,"bbox":[102,357,190,22]}
+{"kind":"textbox","id":"sh/9s76hcve","slide":6,"text":"训练目标\n姓名 / 地址等 BIO 序列标注","textPreview":"训练目标 | 姓名 / 地址等 BIO 序列标注","textChars":22,"textLines":2,"bbox":[329,283,225,75]}
+{"kind":"textbox","id":"sh/8ryporut","slide":6,"text":"输出：train / validation / test_fixed","textPreview":"输出：train / validation / test_fixed","textChars":34,"textLines":1,"bbox":[82,421,440,30]}
+{"kind":"shape","id":"sh/7qpofmd8","slide":6,"bbox":[623,139,601,345]}
+{"kind":"shape","id":"sh/mpgnmhcn","slide":6,"bbox":[623,139,601,9]}
+{"kind":"textbox","id":"sh/lon6dcv2","slide":6,"text":"图片框标注数据","textPreview":"图片框标注数据","textChars":7,"textLines":1,"bbox":[649,170,320,35]}
+{"kind":"textbox","id":"sh/kne5k7uh","slide":6,"text":"OCR / 坐标映射 / 遮挡覆盖评估","textPreview":"OCR / 坐标映射 / 遮挡覆盖评估","textChars":19,"textLines":1,"bbox":[649,216,460,28]}
+{"kind":"shape","id":"sh/c7ip072d","slide":6,"bbox":[649,269,220,118]}
+{"kind":"shape","id":"sh/d8r69c3y","slide":6,"bbox":[649,269,7,118]}
+{"kind":"textbox","id":"sh/q507yxkn","slide":6,"text":"SYNTHETIC IMAGES","textPreview":"SYNTHETIC IMAGES","textChars":16,"textLines":1,"bbox":[669,283,190,24]}
+{"kind":"textbox","id":"sh/b69o72ls","slide":6,"text":"500","textPreview":"500","textChars":3,"textLines":1,"bbox":[669,308,190,45]}
+{"kind":"textbox","id":"sh/o3ipw72h","slide":6,"text":"6 种模板","textPreview":"6 种模板","textChars":5,"textLines":1,"bbox":[669,357,190,22]}
+{"kind":"shape","id":"sh/p4r65c32","slide":6,"bbox":[889,269,220,118]}
+{"kind":"shape","id":"sh/21g7uxkb","slide":6,"bbox":[889,269,7,118]}
+{"kind":"textbox","id":"sh/32po32lw","slide":6,"text":"FIXED IMAGE TEST","textPreview":"FIXED IMAGE TEST","textChars":16,"textLines":1,"bbox":[909,283,190,24]}
+{"kind":"textbox","id":"sh/8z2p8r2l","slide":6,"text":"105","textPreview":"105","textChars":3,"textLines":1,"bbox":[909,308,190,45]}
+{"kind":"textbox","id":"sh/90bqhw36","slide":6,"text":"冻结基线","textPreview":"冻结基线","textChars":4,"textLines":1,"bbox":[909,357,190,22]}
+{"kind":"textbox","id":"sh/juxs7q58","slide":6,"text":"人工框选流程：Label Studio 导出 → 转换为项目 JSONL","textPreview":"人工框选流程：Label Studio 导出 → 转换为项目 JSONL","textChars":36,"textLines":1,"bbox":[649,421,530,30]}
+{"kind":"textbox","id":"sh/it4ryl43","slide":6,"text":"严格分离","textPreview":"严格分离","textChars":4,"textLines":1,"bbox":[56,515,160,25]}
+{"kind":"shape","id":"sh/5wfa90ne","slide":6,"bbox":[225,514,677.11,44]}
+{"kind":"shape","id":"sh/kv690vmt","slide":6,"bbox":[902.11,514,85.62,44]}
+{"kind":"shape","id":"sh/7yxsba5k","slide":6,"bbox":[987.73,514,87.27,44]}
+{"kind":"textbox","id":"sh/6xor254z","slide":6,"text":"TRAIN 31,864","textPreview":"TRAIN 31,864","textChars":12,"textLines":1,"bbox":[238,524,657.11,24]}
+{"kind":"textbox","id":"sh/t0fadknq","slide":6,"text":"VAL 4,029","textPreview":"VAL 4,029","textChars":9,"textLines":1,"bbox":[902.11,524,85.62,24]}
+{"kind":"textbox","id":"sh/sz694fm5","slide":6,"text":"TEST 4,107","textPreview":"TEST 4,107","textChars":10,"textLines":1,"bbox":[987.73,524,87.27,24]}
+{"kind":"shape","id":"sh/n2d8z650","slide":6,"bbox":[56,585,1168,54]}
+{"kind":"textbox","id":"sh/m1krq14v","slide":6,"text":"同一原图及旋转 / 裁剪变体不得跨集合；机器预标注与人工真值必须分开。","textPreview":"同一原图及旋转 / 裁剪变体不得跨集合；机器预标注与人工真值必须分开。","textChars":35,"textLines":1,"bbox":[76,597,1128,30]}
+{"kind":"shape","id":"sh/yh8j25gn","slide":6,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/zih0vah8","slide":6,"text":"来源：reports/processed_dataset_summary.json · reports/generated_image_summary.json","textPreview":"来源：reports/processed_dataset_summary.json · reports/generated_image_summary.json","textChars":80,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/0jq14fyt","slide":6,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/nep6bh","slide":6,"text":""}
+{"kind":"slide","id":"sl/olyrex","slide":7,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":19}
+{"kind":"shape","id":"sh/xove587i","slide":7,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/a14vud8r","slide":7,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/bmdw3ipc","slide":7,"text":"标注契约决定训练和评测是否可信","textPreview":"标注契约决定训练和评测是否可信","textChars":15,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/ozmds3ql","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"textbox","id":"sh/90ve1876","slide":7,"text":"TEXT / NER JSONL","textPreview":"TEXT / NER JSONL","textChars":16,"textLines":1,"bbox":[56,142,300,24]}
+{"kind":"shape","id":"sh/mxkvqt8v","slide":7,"bbox":[56,176,558,272]}
+{"kind":"textbox","id":"sh/nydczypg","slide":7,"text":"{\n  \"id\": \"sample_0001\",\n  \"text\": \"联系人张三，电话13800138000\",\n  \"entities\": [\n    {\"type\":\"person\",\"start\":3,\"end\":5},\n    {\"type\":\"phone\",\"start\":8,\"end\":19}\n  ]\n}","textPreview":"{ |   \"id\": \"sample_0001\", |   \"text\": \"联系人张三，电话13800138000\", |   \"entities\": [ |     {\"type\":\"person\",\"start\":3,\"end\":5}, |     {\"type\":...","textChars":160,"textLines":8,"bbox":[78,195,514,225]}
+{"kind":"textbox","id":"sh/0v2dojqp","slide":7,"text":"0-based 半开区间：text[start:end] == entity.text","textPreview":"0-based 半开区间：text[start:end] == entity.text","textChars":43,"textLines":1,"bbox":[73,414,520,24]}
+{"kind":"textbox","id":"sh/1wbuxo7a","slide":7,"text":"IMAGE / BOX JSONL","textPreview":"IMAGE / BOX JSONL","textChars":17,"textLines":1,"bbox":[666,142,320,24]}
+{"kind":"shape","id":"sh/pkja14bq","slide":7,"bbox":[666,176,558,272]}
+{"kind":"textbox","id":"sh/oja9szu5","slide":7,"text":"{\n  \"image_path\": \"data/images/sample.png\",\n  \"entities\": [{\n    \"type\": \"address\",\n    \"text\": \"北京市朝阳区...\",\n    \"boxes\": [[40,60,340,108],\n              [40,112,190,160]]\n  }]\n}","textPreview":"{ |   \"image_path\": \"data/images/sample.png\", |   \"entities\": [{ |     \"type\": \"address\", |     \"text\": \"北京市朝阳区...\", |     \"boxes\": [[40,...","textChars":178,"textLines":9,"bbox":[688,195,514,225]}
+{"kind":"textbox","id":"sh/3i1szutk","slide":7,"text":"跨行实体：一个实体，多框表达","textPreview":"跨行实体：一个实体，多框表达","textChars":14,"textLines":1,"bbox":[683,414,510,24]}
+{"kind":"shape","id":"sh/2hsrqpcz","slide":7,"bbox":[56,493,264,114]}
+{"kind":"textbox","id":"sh/hgjax4be","slide":7,"text":"整体实体","textPreview":"整体实体","textChars":4,"textLines":1,"bbox":[72,510,230,28]}
+{"kind":"textbox","id":"sh/gfa9ozut","slide":7,"text":"手机号 11 位整体标注","textPreview":"手机号 11 位整体标注","textChars":12,"textLines":1,"bbox":[72,551,230,34]}
+{"kind":"shape","id":"sh/fu1svuto","slide":7,"bbox":[348,493,264,114]}
+{"kind":"textbox","id":"sh/ut8rmpc3","slide":7,"text":"跨行地址","textPreview":"跨行地址","textChars":4,"textLines":1,"bbox":[364,510,230,28]}
+{"kind":"textbox","id":"sh/tszatkbi","slide":7,"text":"一个实体可包含多个 boxes","textPreview":"一个实体可包含多个 boxes","textChars":15,"textLines":1,"bbox":[364,551,230,34]}
+{"kind":"shape","id":"sh/srq9kfux","slide":7,"bbox":[640,493,264,114]}
+{"kind":"textbox","id":"sh/kvu9gf2t","slide":7,"text":"负样本","textPreview":"负样本","textChars":3,"textLines":1,"bbox":[656,510,230,28]}
+{"kind":"textbox","id":"sh/lw3a9kje","slide":7,"text":"无敏感信息图片也必须保留","textPreview":"无敏感信息图片也必须保留","textChars":12,"textLines":1,"bbox":[656,551,230,34]}
+{"kind":"shape","id":"sh/y9crepkn","slide":7,"bbox":[932,493,264,114]}
+{"kind":"textbox","id":"sh/juls7a18","slide":7,"text":"真值隔离","textPreview":"真值隔离","textChars":4,"textLines":1,"bbox":[948,510,230,28]}
+{"kind":"textbox","id":"sh/w7u9cf2h","slide":7,"text":"pseudo_label ≠ human truth","textPreview":"pseudo_label ≠ human truth","textChars":26,"textLines":1,"bbox":[948,551,230,34]}
+{"kind":"shape","id":"sh/x83a5kj2","slide":7,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/a5sra5kr","slide":7,"text":"详细 schema：docs/dataset_input_guide.md","textPreview":"详细 schema：docs/dataset_input_guide.md","textChars":37,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/b61s3a1c","slide":7,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/olyrex","slide":7,"text":""}
+{"kind":"slide","id":"sl/ballkf","slide":8,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":40}
+{"kind":"shape","id":"sh/mlone9sn","slide":8,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/9of69ore","slide":8,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/8n65gjat","slide":8,"text":"MacBERT 训练形成可复现的最佳模型","textPreview":"MacBERT 训练形成可复现的最佳模型","textChars":20,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/zyx43e9c","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/yx4na9sr","slide":8,"bbox":[56,139,160,54]}
+{"kind":"textbox","id":"sh/l0f654ri","slide":8,"text":"数据检查","textPreview":"数据检查","textChars":4,"textLines":1,"bbox":[64,154,144,26]}
+{"kind":"textbox","id":"sh/kz65czax","slide":8,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[216,149,24,28]}
+{"kind":"shape","id":"sh/bud4zu90","slide":8,"bbox":[240,139,160,54]}
+{"kind":"textbox","id":"sh/at4n6psf","slide":8,"text":"BIO 转换","textPreview":"BIO 转换","textChars":6,"textLines":1,"bbox":[248,154,144,26]}
+{"kind":"textbox","id":"sh/8z6twrmh","slide":8,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[400,149,24,28]}
+{"kind":"shape","id":"sh/t0fu5w32","slide":8,"bbox":[424,139,160,54]}
+{"kind":"textbox","id":"sh/6x4bu14b","slide":8,"text":"Token 对齐","textPreview":"Token 对齐","textChars":8,"textLines":1,"bbox":[432,154,144,26]}
+{"kind":"textbox","id":"sh/7yxc36lw","slide":8,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[584,149,24,28]}
+{"kind":"shape","id":"sh/kbmtsrml","slide":8,"bbox":[608,139,160,54]}
+{"kind":"textbox","id":"sh/lwvu1w36","slide":8,"text":"CUDA 训练","textPreview":"CUDA 训练","textChars":7,"textLines":1,"bbox":[616,154,144,26]}
+{"kind":"textbox","id":"sh/y94bqh4f","slide":8,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[768,149,24,28]}
+{"kind":"shape","id":"sh/jadczml0","slide":8,"bbox":[792,139,160,54]}
+{"kind":"textbox","id":"sh/4rqd4b2p","slide":8,"text":"验证选优","textPreview":"验证选优","textChars":4,"textLines":1,"bbox":[800,154,144,26]}
+{"kind":"textbox","id":"sh/5szudg3a","slide":8,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[952,149,24,28]}
+{"kind":"shape","id":"sh/dcb21wr2","slide":8,"bbox":[976,139,160,54]}
+{"kind":"textbox","id":"sh/sb2l8rqh","slide":8,"text":"固定集测试","textPreview":"固定集测试","textChars":5,"textLines":1,"bbox":[984,154,144,26]}
+{"kind":"shape","id":"sh/ratkzm9c","slide":8,"bbox":[56,229,386,343]}
+{"kind":"textbox","id":"sh/q9k36h8r","slide":8,"text":"TRAIN CONFIG","textPreview":"TRAIN CONFIG","textChars":12,"textLines":1,"bbox":[80,252,220,24]}
+{"kind":"textbox","id":"sh/58b2xcr6","slide":8,"text":"MODEL","textPreview":"MODEL","textChars":5,"textLines":1,"bbox":[80,292,145,22]}
+{"kind":"textbox","id":"sh/472l47ql","slide":8,"text":"MacBERT-base","textPreview":"MacBERT-base","textChars":12,"textLines":1,"bbox":[226,292,185,22]}
+{"kind":"shape","id":"sh/369kv290","slide":8,"bbox":[80,320,331,0]}
+{"kind":"textbox","id":"sh/i5032x8f","slide":8,"text":"MAX LENGTH","textPreview":"MAX LENGTH","textChars":10,"textLines":1,"bbox":[80,328,145,22]}
+{"kind":"textbox","id":"sh/hkr2tcru","slide":8,"text":"256","textPreview":"256","textChars":3,"textLines":1,"bbox":[226,328,185,22]}
+{"kind":"shape","id":"sh/gji107qp","slide":8,"bbox":[80,356,331,0]}
+{"kind":"textbox","id":"sh/6pgzado7","slide":8,"text":"LEARNING RATE","textPreview":"LEARNING RATE","textChars":13,"textLines":1,"bbox":[80,364,145,22]}
+{"kind":"textbox","id":"sh/7qp03yps","slide":8,"text":"2e-5","textPreview":"2e-5","textChars":4,"textLines":1,"bbox":[226,364,185,22]}
+{"kind":"shape","id":"sh/8byhc36d","slide":8,"bbox":[80,392,331,0]}
+{"kind":"textbox","id":"sh/tc7i587y","slide":8,"text":"BATCH SIZE","textPreview":"BATCH SIZE","textChars":10,"textLines":1,"bbox":[80,400,145,22]}
+{"kind":"textbox","id":"sh/ylwz6tob","slide":8,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[226,400,185,22]}
+{"kind":"shape","id":"sh/jm50zypw","slide":8,"bbox":[80,428,331,0]}
+{"kind":"textbox","id":"sh/kneh836h","slide":8,"text":"EPOCHS","textPreview":"EPOCHS","textChars":6,"textLines":1,"bbox":[80,436,145,22]}
+{"kind":"textbox","id":"sh/lo7i187m","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[226,436,185,22]}
+{"kind":"shape","id":"sh/ahwz29oz","slide":8,"bbox":[80,464,331,0]}
+{"kind":"textbox","id":"sh/bi50vepk","slide":8,"text":"BEST METRIC","textPreview":"BEST METRIC","textChars":11,"textLines":1,"bbox":[80,472,145,22]}
+{"kind":"textbox","id":"sh/3apw7utg","slide":8,"text":"macro_f1","textPreview":"macro_f1","textChars":8,"textLines":1,"bbox":[226,472,185,22]}
+{"kind":"shape","id":"sh/29gvepsv","slide":8,"bbox":[80,500,331,0]}
+{"kind":"textbox","id":"sh/pc7e94bm","slide":8,"text":"DEVICE","textPreview":"DEVICE","textChars":6,"textLines":1,"bbox":[80,508,145,22]}
+{"kind":"textbox","id":"sh/obyxgza1","slide":8,"text":"RTX 4060 / CUDA","textPreview":"RTX 4060 / CUDA","textChars":15,"textLines":1,"bbox":[226,508,185,22]}
+{"kind":"shape","id":"sh/f65w3at4","slide":8,"bbox":[56,591,386,54]}
+{"kind":"textbox","id":"sh/e5wva5sz","slide":8,"text":"BEST EPOCH 2 · macbert_pii_v2","textPreview":"BEST EPOCH 2 · macbert_pii_v2","textChars":29,"textLines":1,"bbox":[69,603,360,30]}
+{"kind":"textbox","id":"sh/ri5wzat8","slide":8,"text":"Loss","textPreview":"Loss","textChars":4,"textLines":1,"bbox":[480,440,350,22]}
+{"kind":"textbox","id":"sh/6hcv65sn","slide":8,"text":"Validation Macro F1","textPreview":"Validation Macro F1","textChars":19,"textLines":1,"bbox":[856,440,350,22]}
+{"kind":"shape","id":"sh/wnat0bql","slide":8,"bbox":[480,489,350,118]}
+{"kind":"shape","id":"sh/hoju9gr6","slide":8,"bbox":[480,489,7,118]}
+{"kind":"textbox","id":"sh/ulsby18f","slide":8,"text":"FIXED TEXT MACRO F1","textPreview":"FIXED TEXT MACRO F1","textChars":19,"textLines":1,"bbox":[500,503,320,24]}
+{"kind":"textbox","id":"sh/vm1s7690","slide":8,"text":"0.999871","textPreview":"0.999871","textChars":8,"textLines":1,"bbox":[500,528,320,45]}
+{"kind":"textbox","id":"sh/4but4bqh","slide":8,"text":"模板化文本集，不能外推真实场景","textPreview":"模板化文本集，不能外推真实场景","textChars":15,"textLines":1,"bbox":[500,577,320,22]}
+{"kind":"shape","id":"sh/5c3udgr2","slide":8,"bbox":[856,489,350,118]}
+{"kind":"shape","id":"sh/i9sb2l8r","slide":8,"bbox":[856,489,7,118]}
+{"kind":"textbox","id":"sh/jalcb69w","slide":8,"text":"TRAINING TIME","textPreview":"TRAINING TIME","textChars":13,"textLines":1,"bbox":[876,503,320,24]}
+{"kind":"textbox","id":"sh/kfqtsrqd","slide":8,"text":"58m 37s","textPreview":"58m 37s","textChars":7,"textLines":1,"bbox":[876,528,320,45]}
+{"kind":"textbox","id":"sh/lgza1wry","slide":8,"text":"CUDA · FP32","textPreview":"CUDA · FP32","textChars":11,"textLines":1,"bbox":[876,577,320,22]}
+{"kind":"shape","id":"sh/107i9ofa","slide":8,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/gzyhgjy5","slide":8,"text":"来源：configs/train_config.yaml · reports/evaluation_summary.json","textPreview":"来源：configs/train_config.yaml · reports/evaluation_summary.json","textChars":62,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/fyp07exk","slide":8,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"image","id":"im/epgzyhcf","slide":8,"name":"","geometry":"rect","alt":"Training and validation loss curve","bbox":[480,229,350,205]}
+{"kind":"image","id":"im/zqp07md0","slide":8,"name":"","geometry":"rect","alt":"Validation macro F1 curve","bbox":[856,229,350,205]}
+{"kind":"notes","id":"nt/ballkf","slide":8,"text":""}
+{"kind":"slide","id":"sl/p5vwwl","slide":9,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":22}
+{"kind":"shape","id":"sh/na50n6lg","slide":9,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/obe1gbm1","slide":9,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/9cni9g3m","slide":9,"text":"坐标映射是端到端安全的关键","textPreview":"坐标映射是端到端安全的关键","textChars":13,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/adwjil47","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"textbox","id":"sh/bep0bqls","slide":9,"text":"OCR 只返回整行框，实体往往只是其中几个字符。","textPreview":"OCR 只返回整行框，实体往往只是其中几个字符。","textChars":24,"textLines":1,"bbox":[56,137,610,32]}
+{"kind":"shape","id":"sh/wfy1kbmd","slide":9,"bbox":[56,190,530,82]}
+{"kind":"textbox","id":"sh/xg7idg3i","slide":9,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[68,202,42,30]}
+{"kind":"textbox","id":"sh/qhcz6h43","slide":9,"text":"方向与图像增强","textPreview":"方向与图像增强","textChars":7,"textLines":1,"bbox":[110,201,464,32]}
+{"kind":"textbox","id":"sh/ril0fm58","slide":9,"text":"EXIF 校正、暗图对比度、等比例缩放","textPreview":"EXIF 校正、暗图对比度、等比例缩放","textChars":19,"textLines":1,"bbox":[74,240,494,24]}
+{"kind":"shape","id":"sh/3a9gfuxs","slide":9,"bbox":[56,288,530,82]}
+{"kind":"textbox","id":"sh/i90z6pw7","slide":9,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[68,300,42,30]}
+{"kind":"textbox","id":"sh/5cryh4fy","slide":9,"text":"字符宽度加权","textPreview":"字符宽度加权","textChars":6,"textLines":1,"bbox":[110,299,464,32]}
+{"kind":"textbox","id":"sh/4bih8zed","slide":9,"text":"中文 1.00；数字/小写 0.58；标点 0.35","textPreview":"中文 1.00；数字/小写 0.58；标点 0.35","textChars":26,"textLines":1,"bbox":[74,338,494,24]}
+{"kind":"shape","id":"sh/vm9gbaxg","slide":9,"bbox":[56,386,530,82]}
+{"kind":"textbox","id":"sh/ul0f25wb","slide":9,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[68,398,42,30]}
+{"kind":"textbox","id":"sh/h8rydkfm","slide":9,"text":"墨迹边界修正","textPreview":"墨迹边界修正","textChars":6,"textLines":1,"bbox":[110,397,464,32]}
+{"kind":"textbox","id":"sh/g7ix4fe1","slide":9,"text":"透视矫正、垂直投影、连通域扩展","textPreview":"透视矫正、垂直投影、连通域扩展","textChars":15,"textLines":1,"bbox":[74,436,494,24]}
+{"kind":"shape","id":"sh/7ipg7axk","slide":9,"bbox":[56,484,530,82]}
+{"kind":"textbox","id":"sh/6hgfy5gz","slide":9,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[68,496,42,30]}
+{"kind":"textbox","id":"sh/adwza50r","slide":9,"text":"安全降级","textPreview":"安全降级","textChars":4,"textLines":1,"bbox":[110,495,464,32]}
+{"kind":"textbox","id":"sh/bepgjahc","slide":9,"text":"低置信度时整块 full_block fallback","textPreview":"低置信度时整块 full_block fallback","textChars":27,"textLines":1,"bbox":[74,534,494,24]}
+{"kind":"shape","id":"sh/wfyhcvix","slide":9,"bbox":[56,598,530,54]}
+{"kind":"textbox","id":"sh/xg7il0zi","slide":9,"text":"严格模式：宁可多遮，不能漏出敏感字形","textPreview":"严格模式：宁可多遮，不能漏出敏感字形","textChars":18,"textLines":1,"bbox":[72,610,498,30]}
+{"kind":"textbox","id":"sh/lk7ipkze","slide":9,"text":"A  原始合成图","textPreview":"A  原始合成图","textChars":8,"textLines":1,"bbox":[640,273,576,22]}
+{"kind":"textbox","id":"sh/6l0zip0z","slide":9,"text":"B  绿色：真值框","textPreview":"B  绿色：真值框","textChars":9,"textLines":1,"bbox":[640,445,576,22]}
+{"kind":"textbox","id":"sh/7690ruhk","slide":9,"text":"C  红色：预测框","textPreview":"C  红色：预测框","textChars":9,"textLines":1,"bbox":[640,617,576,22]}
+{"kind":"shape","id":"sh/hcvax8ny","slide":9,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/gbmt436d","slide":9,"text":"当前策略：ink_refined · strict · minimum_mapping_confidence 0.72","textPreview":"当前策略：ink_refined · strict · minimum_mapping_confidence 0.72","textChars":59,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/fqdsvi5s","slide":9,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"image","id":"im/p8n2pcje","slide":9,"name":"","geometry":"rect","alt":"Original synthetic test image","bbox":[640,150,576,119]}
+{"kind":"image","id":"im/onelg7it","slide":9,"name":"","geometry":"rect","alt":"Ground truth boxes","bbox":[640,322,576,119]}
+{"kind":"image","id":"im/3mlkn218","slide":9,"name":"","geometry":"rect","alt":"Predicted boxes","bbox":[640,494,576,119]}
+{"kind":"notes","id":"nt/p5vwwl","slide":9,"text":""}
+{"kind":"slide","id":"sl/xl9hpt","slide":10,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":21}
+{"kind":"shape","id":"sh/donyxk7m","slide":10,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/qlwfm58b","slide":10,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/rm5gvapg","slide":10,"text":"Gradio 将模型能力封装为六页本地产品","textPreview":"Gradio 将模型能力封装为六页本地产品","textChars":21,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/4jexkvq5","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/2xwfi58z","slide":10,"bbox":[56,136,780,6]}
+{"kind":"shape","id":"sh/3i5wrqpk","slide":10,"bbox":[865,136,359,488]}
+{"kind":"textbox","id":"sh/ofyxwz69","slide":10,"text":"6 TABS","textPreview":"6 TABS","textChars":6,"textLines":1,"bbox":[890,160,280,28]}
+{"kind":"textbox","id":"sh/9gry547u","slide":10,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[890,204,34,24]}
+{"kind":"textbox","id":"sh/pozqtkji","slide":10,"text":"图片脱敏","textPreview":"图片脱敏","textChars":4,"textLines":1,"bbox":[932,203,230,27]}
+{"kind":"shape","id":"sh/onqpkf2x","slide":10,"bbox":[890,235,286,0]}
+{"kind":"textbox","id":"sh/nmh8ra1c","slide":10,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[890,251,34,24]}
+{"kind":"textbox","id":"sh/2l87i5kr","slide":10,"text":"文本检测","textPreview":"文本检测","textChars":4,"textLines":1,"bbox":[932,250,230,27]}
+{"kind":"shape","id":"sh/1kzqp0j6","slide":10,"bbox":[890,282,286,0]}
+{"kind":"textbox","id":"sh/0jqpgv2l","slide":10,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[890,298,34,24]}
+{"kind":"textbox","id":"sh/fyx8nq1g","slide":10,"text":"批量处理","textPreview":"批量处理","textChars":4,"textLines":1,"bbox":[932,297,230,27]}
+{"kind":"shape","id":"sh/exo7elkv","slide":10,"bbox":[890,329,286,0]}
+{"kind":"textbox","id":"sh/lgjq14jq","slide":10,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[890,345,34,24]}
+{"kind":"textbox","id":"sh/kfa9sz25","slide":10,"text":"历史记录","textPreview":"历史记录","textChars":4,"textLines":1,"bbox":[932,344,230,27]}
+{"kind":"shape","id":"sh/4b21k7ud","slide":10,"bbox":[890,376,286,0]}
+{"kind":"textbox","id":"sh/5cbidsvy","slide":10,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[890,392,34,24]}
+{"kind":"textbox","id":"sh/i9kjixw7","slide":10,"text":"模型配置","textPreview":"模型配置","textChars":4,"textLines":1,"bbox":[932,391,230,27]}
+{"kind":"shape","id":"sh/3at0b2ds","slide":10,"bbox":[890,423,286,0]}
+{"kind":"textbox","id":"sh/w7i1gneh","slide":10,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[890,439,34,24]}
+{"kind":"textbox","id":"sh/h8bi9sv2","slide":10,"text":"系统状态","textPreview":"系统状态","textChars":4,"textLines":1,"bbox":[932,438,230,27]}
+{"kind":"shape","id":"sh/u50jedwb","slide":10,"bbox":[890,470,286,0]}
+{"kind":"textbox","id":"sh/v6907idw","slide":10,"text":"一次推理，多种输出","textPreview":"一次推理，多种输出","textChars":9,"textLines":1,"bbox":[890,504,270,28]}
+{"kind":"textbox","id":"sh/83i1c3e5","slide":10,"text":"预览图 · 脱敏图 · Mask · JSON","textPreview":"预览图 · 脱敏图 · Mask · JSON","textChars":23,"textLines":1,"bbox":[890,544,290,28]}
+{"kind":"textbox","id":"sh/94ri58vq","slide":10,"text":"取消实体后重新生成，不重复 OCR / NER","textPreview":"取消实体后重新生成，不重复 OCR / NER","textChars":23,"textLines":1,"bbox":[890,580,286,38]}
+{"kind":"shape","id":"sh/bepkfyxs","slide":10,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/adgjmdg7","slide":10,"text":"实际界面截图：本地 http://127.0.0.1:7860","textPreview":"实际界面截图：本地 http://127.0.0.1:7860","textChars":31,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/x072h8fi","slide":10,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"image","id":"im/snidcfi9","slide":10,"name":"","geometry":"rect","alt":"Actual pii-redactor Gradio interface","bbox":[56,136,780,488]}
+{"kind":"notes","id":"nt/xl9hpt","slide":10,"text":""}
+{"kind":"slide","id":"sl/weyf5t","slide":11,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":34}
+{"kind":"shape","id":"sh/47edcfet","slide":11,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/j65c3ad8","slide":11,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/i5wva5wn","slide":11,"text":"测试证明链路可运行，固定集暴露真实短板","textPreview":"测试证明链路可运行，固定集暴露真实短板","textChars":19,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/tw7e9kvq","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/svydgfe5","slide":11,"bbox":[56,132,1168,62]}
+{"kind":"textbox","id":"sh/rupw7adk","slide":11,"text":"初版验收 90 + 1","textPreview":"初版验收 90 + 1","textChars":11,"textLines":1,"bbox":[76,147,220,28]}
+{"kind":"textbox","id":"sh/6tgvepwz","slide":11,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[303,145,40,28]}
+{"kind":"textbox","id":"sh/10red4vm","slide":11,"text":"当前回归 117 非集成 + 1 集成","textPreview":"当前回归 117 非集成 + 1 集成","textChars":19,"textLines":1,"bbox":[350,147,390,28]}
+{"kind":"textbox","id":"sh/gzidkze1","slide":11,"text":"APP HTTP 200 · 6 Tabs · SQLite · ZIP/CSV/JSON","textPreview":"APP HTTP 200 · 6 Tabs · SQLite · ZIP/CSV/JSON","textChars":45,"textLines":1,"bbox":[746,147,450,28]}
+{"kind":"shape","id":"sh/idwzepw3","slide":11,"bbox":[56,226,210,118]}
+{"kind":"shape","id":"sh/jepgnudo","slide":11,"bbox":[56,226,7,118]}
+{"kind":"textbox","id":"sh/4fyhgze9","slide":11,"text":"OCR 相似度","textPreview":"OCR 相似度","textChars":7,"textLines":1,"bbox":[76,240,180,24]}
+{"kind":"textbox","id":"sh/5g7yp4vu","slide":11,"text":"0.9164","textPreview":"0.9164","textChars":6,"textLines":1,"bbox":[76,265,180,45]}
+{"kind":"textbox","id":"sh/61gzi9wf","slide":11,"text":"105 张固定图","textPreview":"105 张固定图","textChars":8,"textLines":1,"bbox":[76,314,180,22]}
+{"kind":"shape","id":"sh/r2p0red0","slide":11,"bbox":[290,226,210,118]}
+{"kind":"shape","id":"sh/s3yhkzel","slide":11,"bbox":[290,226,7,118]}
+{"kind":"textbox","id":"sh/t47it4vq","slide":11,"text":"CER","textPreview":"CER","textChars":3,"textLines":1,"bbox":[310,240,180,24]}
+{"kind":"textbox","id":"sh/mlcz65wb","slide":11,"text":"0.0887","textPreview":"0.0887","textChars":6,"textLines":1,"bbox":[310,265,180,45]}
+{"kind":"textbox","id":"sh/765gfadg","slide":11,"text":"字符错误率","textPreview":"字符错误率","textChars":5,"textLines":1,"bbox":[310,314,180,22]}
+{"kind":"shape","id":"sh/bq1wn6t8","slide":11,"bbox":[524,226,210,118]}
+{"kind":"shape","id":"sh/apsve1c3","slide":11,"bbox":[524,226,7,118]}
+{"kind":"textbox","id":"sh/xcjepgbe","slide":11,"text":"Precision","textPreview":"Precision","textChars":9,"textLines":1,"bbox":[544,240,180,24]}
+{"kind":"textbox","id":"sh/cradgbut","slide":11,"text":"0.9451","textPreview":"0.9451","textChars":6,"textLines":1,"bbox":[544,265,180,45]}
+{"kind":"textbox","id":"sh/3mhwj6tc","slide":11,"text":"误打较少","textPreview":"误打较少","textChars":4,"textLines":1,"bbox":[544,314,180,22]}
+{"kind":"shape","id":"sh/2l8va1cr","slide":11,"bbox":[758,226,210,118]}
+{"kind":"shape","id":"sh/pojelwbi","slide":11,"bbox":[758,226,7,118]}
+{"kind":"textbox","id":"sh/onadcrux","slide":11,"text":"Recall","textPreview":"Recall","textChars":6,"textLines":1,"bbox":[778,240,180,24]}
+{"kind":"textbox","id":"sh/7ilwvqtg","slide":11,"text":"0.7876","textPreview":"0.7876","textChars":6,"textLines":1,"bbox":[778,265,180,45]}
+{"kind":"textbox","id":"sh/mhcfmlcv","slide":11,"text":"漏检仍明显","textPreview":"漏检仍明显","textChars":5,"textLines":1,"bbox":[778,314,180,22]}
+{"kind":"shape","id":"sh/4nmtgnad","slide":11,"bbox":[992,226,210,118]}
+{"kind":"shape","id":"sh/5ofapsry","slide":11,"bbox":[992,226,7,118]}
+{"kind":"textbox","id":"sh/i14bedsn","slide":11,"text":"Entity F1","textPreview":"Entity F1","textChars":9,"textLines":1,"bbox":[1012,240,180,24]}
+{"kind":"textbox","id":"sh/jmdsni98","slide":11,"text":"0.8592","textPreview":"0.8592","textChars":6,"textLines":1,"bbox":[1012,265,180,45]}
+{"kind":"textbox","id":"sh/sr6tk7ap","slide":11,"text":"端到端检测","textPreview":"端到端检测","textChars":5,"textLines":1,"bbox":[1012,314,180,22]}
+{"kind":"textbox","id":"sh/tsfutsra","slide":11,"text":"风险指标","textPreview":"风险指标","textChars":4,"textLines":1,"bbox":[56,382,160,28]}
+{"kind":"shape","id":"sh/6pobixsj","slide":11,"bbox":[56,426,264,146]}
+{"kind":"shape","id":"sh/rqxsr294","slide":11,"bbox":[56,426,8,146]}
+{"kind":"textbox","id":"sh/gvqto7al","slide":11,"text":"65","textPreview":"65","textChars":2,"textLines":1,"bbox":[84,450,210,52]}
+{"kind":"textbox","id":"sh/1wzuxcr6","slide":11,"text":"漏检实体","textPreview":"漏检实体","textChars":4,"textLines":1,"bbox":[84,515,210,28]}
+{"kind":"shape","id":"sh/1s72h8ra","slide":11,"bbox":[348,426,264,146]}
+{"kind":"shape","id":"sh/0relo3ap","slide":11,"bbox":[348,426,8,146]}
+{"kind":"textbox","id":"sh/fq5kfy94","slide":11,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[376,450,210,52]}
+{"kind":"textbox","id":"sh/epw3mtsj","slide":11,"text":"误打码","textPreview":"误打码","textChars":3,"textLines":1,"bbox":[376,515,210,28]}
+{"kind":"shape","id":"sh/don2dory","slide":11,"bbox":[640,426,264,146]}
+{"kind":"shape","id":"sh/snelkjat","slide":11,"bbox":[640,426,8,146]}
+{"kind":"textbox","id":"sh/rm5kby98","slide":11,"text":"0.4124","textPreview":"0.4124","textChars":6,"textLines":1,"bbox":[668,450,210,52]}
+{"kind":"textbox","id":"sh/qlwjitsn","slide":11,"text":"平均框 IoU","textPreview":"平均框 IoU","textChars":7,"textLines":1,"bbox":[668,515,210,28]}
+{"kind":"shape","id":"sh/xkr2psri","slide":11,"bbox":[932,426,264,146]}
+{"kind":"shape","id":"sh/cjylwnax","slide":11,"bbox":[932,426,8,146]}
+{"kind":"textbox","id":"sh/upszap8f","slide":11,"text":"0%","textPreview":"0%","textChars":2,"textLines":1,"bbox":[960,450,210,52]}
+{"kind":"textbox","id":"sh/vq10jup0","slide":11,"text":"IoU ≥ 0.95","textPreview":"IoU ≥ 0.95","textChars":10,"textLines":1,"bbox":[960,515,210,28]}
+{"kind":"shape","id":"sh/grahczql","slide":11,"bbox":[56,600,1168,48]}
+{"kind":"textbox","id":"sh/hsjilk7q","slide":11,"text":"结论：检测能力可演示；高安全场景仍必须人工复核，并优先使用实心黑框。","textPreview":"结论：检测能力可演示；高安全场景仍必须人工复核，并优先使用实心黑框。","textChars":34,"textLines":1,"bbox":[72,609,1136,28]}
+{"kind":"shape","id":"sh/618z6583","slide":11,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/7210fapo","slide":11,"text":"冻结基线：reports/image_evaluation_summary.json · 本次未重跑 105 张评测","textPreview":"冻结基线：reports/image_evaluation_summary.json · 本次未重跑 105 张评测","textChars":58,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/83ah8fq9","slide":11,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/weyf5t","slide":11,"text":""}
+{"kind":"slide","id":"sl/hrbj4m","slide":12,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":30}
+{"kind":"shape","id":"sh/94zed8rm","slide":12,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/m18fitsb","slide":12,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/72hwby9g","slide":12,"text":"应用价值集中在文档流转前的隐私预处理","textPreview":"应用价值集中在文档流转前的隐私预处理","textChars":18,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/wraxo3qd","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/hsjeh8ry","slide":12,"bbox":[56,151,170,405]}
+{"kind":"shape","id":"sh/u58fmds7","slide":12,"bbox":[56,151,170,10]}
+{"kind":"textbox","id":"sh/v61wfy9s","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[74,185,130,34]}
+{"kind":"textbox","id":"sh/4vaxsnq9","slide":12,"text":"学生作业","textPreview":"学生作业","textChars":4,"textLines":1,"bbox":[74,238,130,66]}
+{"kind":"shape","id":"sh/5wjelsru","slide":12,"bbox":[74,323,118,0]}
+{"kind":"textbox","id":"sh/lsvu5wnq","slide":12,"text":"提交与展示前\n自动检查姓名学号","textPreview":"提交与展示前 | 自动检查姓名学号","textChars":15,"textLines":2,"bbox":[74,351,132,90]}
+{"kind":"textbox","id":"sh/0rmtwrm5","slide":12,"text":"LOCAL","textPreview":"LOCAL","textChars":5,"textLines":1,"bbox":[74,500,132,24]}
+{"kind":"shape","id":"sh/zqdc3m50","slide":12,"bbox":[250,151,170,405]}
+{"kind":"shape","id":"sh/yp4buh4f","slide":12,"bbox":[250,151,170,10]}
+{"kind":"textbox","id":"sh/9gfu9wn2","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[268,185,130,34]}
+{"kind":"textbox","id":"sh/8vmt0rmh","slide":12,"text":"报名 / 登记","textPreview":"报名 / 登记","textChars":7,"textLines":1,"bbox":[268,238,130,66]}
+{"kind":"shape","id":"sh/nudc765w","slide":12,"bbox":[268,323,118,0]}
+{"kind":"textbox","id":"sh/mt4by14b","slide":12,"text":"表单归档前\n遮挡身份字段","textPreview":"表单归档前 | 遮挡身份字段","textChars":12,"textLines":2,"bbox":[268,351,132,90]}
+{"kind":"textbox","id":"sh/pkbaxcni","slide":12,"text":"LOCAL","textPreview":"LOCAL","textChars":5,"textLines":1,"bbox":[268,500,132,24]}
+{"kind":"shape","id":"sh/oz2to7md","slide":12,"bbox":[444,151,170,405]}
+{"kind":"shape","id":"sh/g36tk7ut","slide":12,"bbox":[444,151,170,10]}
+{"kind":"textbox","id":"sh/h4fudcve","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[462,185,130,34]}
+{"kind":"textbox","id":"sh/u14bixc3","slide":12,"text":"截图分享","textPreview":"截图分享","textChars":4,"textLines":1,"bbox":[462,238,130,66]}
+{"kind":"shape","id":"sh/f2dcb2do","slide":12,"bbox":[462,323,118,0]}
+{"kind":"textbox","id":"sh/476toru5","slide":12,"text":"聊天和工单\n快速打码","textPreview":"聊天和工单 | 快速打码","textChars":10,"textLines":2,"bbox":[462,351,132,90]}
+{"kind":"textbox","id":"sh/p8fuhwvq","slide":12,"text":"LOCAL","textPreview":"LOCAL","textChars":5,"textLines":1,"bbox":[462,500,132,24]}
+{"kind":"shape","id":"sh/25obmhcz","slide":12,"bbox":[638,151,170,405]}
+{"kind":"shape","id":"sh/36xcfmdk","slide":12,"bbox":[638,151,170,10]}
+{"kind":"textbox","id":"sh/cbqtsru1","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[656,185,130,34]}
+{"kind":"textbox","id":"sh/dwzulwvm","slide":12,"text":"企业流转","textPreview":"企业流转","textChars":4,"textLines":1,"bbox":[656,238,130,66]}
+{"kind":"shape","id":"sh/72lo7u10","slide":12,"bbox":[656,323,118,0]}
+{"kind":"textbox","id":"sh/m1cnyp0f","slide":12,"text":"内部文档外发前\n统一预处理","textPreview":"内部文档外发前 | 统一预处理","textChars":13,"textLines":2,"bbox":[656,351,132,90]}
+{"kind":"textbox","id":"sh/943694j6","slide":12,"text":"LOCAL","textPreview":"LOCAL","textChars":5,"textLines":1,"bbox":[656,500,132,24]}
+{"kind":"shape","id":"sh/83u50zil","slide":12,"bbox":[832,151,170,405]}
+{"kind":"shape","id":"sh/ze1o3a14","slide":12,"bbox":[832,151,170,10]}
+{"kind":"textbox","id":"sh/ydsnu50j","slide":12,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[850,185,130,34]}
+{"kind":"textbox","id":"sh/lg365kju","slide":12,"text":"数据集治理","textPreview":"数据集治理","textChars":5,"textLines":1,"bbox":[850,238,130,66]}
+{"kind":"shape","id":"sh/0fu5wfip","slide":12,"bbox":[850,323,118,0]}
+{"kind":"textbox","id":"sh/ja5ofe18","slide":12,"text":"训练数据发布前\n筛查 PII","textPreview":"训练数据发布前 | 筛查 PII","textChars":14,"textLines":2,"bbox":[850,351,132,90]}
+{"kind":"textbox","id":"sh/i9wn690n","slide":12,"text":"LOCAL","textPreview":"LOCAL","textChars":5,"textLines":1,"bbox":[850,500,132,24]}
+{"kind":"shape","id":"sh/qhcrutg7","slide":12,"bbox":[1026,151,170,405]}
+{"kind":"shape","id":"sh/rils3yxc","slide":12,"bbox":[1026,151,170,10]}
+{"kind":"textbox","id":"sh/sju9w3yx","slide":12,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1044,185,130,34]}
+{"kind":"textbox","id":"sh/dk3a58fi","slide":12,"text":"批量图片","textPreview":"批量图片","textChars":4,"textLines":1,"bbox":[1044,238,130,66]}
+{"kind":"shape","id":"sh/idsrqtgv","slide":12,"bbox":[1044,323,118,0]}
+{"kind":"textbox","id":"sh/3el8zyxg","slide":12,"text":"ZIP/CSV/JSON\n统一导出","textPreview":"ZIP/CSV/JSON | 统一导出","textChars":17,"textLines":2,"bbox":[1044,351,132,90]}
+{"kind":"textbox","id":"sh/4fu9s3y1","slide":12,"text":"LOCAL","textPreview":"LOCAL","textChars":5,"textLines":1,"bbox":[1044,500,132,24]}
+{"kind":"shape","id":"sh/5g3q18fm","slide":12,"bbox":[56,588,1168,58]}
+{"kind":"textbox","id":"sh/29wr2dwz","slide":12,"text":"定位：高风险审核的辅助工具，而不是自动合规结论生成器。","textPreview":"定位：高风险审核的辅助工具，而不是自动合规结论生成器。","textChars":27,"textLines":1,"bbox":[80,601,1120,34]}
+{"kind":"shape","id":"sh/na5sbixk","slide":12,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/x4ru1cz2","slide":12,"text":"适用于本地单机预处理与教学/工程验证","textPreview":"适用于本地单机预处理与教学/工程验证","textChars":18,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/c3yt8rih","slide":12,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/hrbj4m","slide":12,"text":""}
+{"kind":"slide","id":"sl/6akv51","slide":13,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":21}
+{"kind":"shape","id":"sh/wbq1g36h","slide":13,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/bah0nypw","slide":13,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/a98jedob","slide":13,"text":"当前边界必须明确：可演示，不等于无人值守","textPreview":"当前边界必须明确：可演示，不等于无人值守","textChars":20,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/98fil876","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/o761c36l","slide":13,"bbox":[56,149,340,411]}
+{"kind":"textbox","id":"sh/n6x0jyp0","slide":13,"text":"0%","textPreview":"0%","textChars":2,"textLines":1,"bbox":[83,192,286,105]}
+{"kind":"textbox","id":"sh/m5ojatof","slide":13,"text":"旧冻结基线\nIoU ≥ 0.95","textPreview":"旧冻结基线 | IoU ≥ 0.95","textChars":16,"textLines":2,"bbox":[90,315,272,76]}
+{"kind":"shape","id":"sh/1kfiho7u","slide":13,"bbox":[96,418,260,0]}
+{"kind":"textbox","id":"sh/0j618j69","slide":13,"text":"它不是“功能失效”，\n而是说明局部框不能替代人工复核。","textPreview":"它不是“功能失效”， | 而是说明局部框不能替代人工复核。","textChars":27,"textLines":2,"bbox":[84,449,284,74]}
+{"kind":"shape","id":"sh/ux0jyd0v","slide":13,"bbox":[438,149,356,174]}
+{"kind":"textbox","id":"sh/vy9k7i1g","slide":13,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[456,167,42,28]}
+{"kind":"textbox","id":"sh/wzi10ni1","slide":13,"text":"OCR","textPreview":"OCR","textChars":3,"textLines":1,"bbox":[504,164,255,34]}
+{"kind":"textbox","id":"sh/h0r29sjm","slide":13,"text":"手写、阴影、旋转和低清图仍不稳定","textPreview":"手写、阴影、旋转和低清图仍不稳定","textChars":16,"textLines":1,"bbox":[460,217,310,68]}
+{"kind":"shape","id":"sh/mt0jut0z","slide":13,"bbox":[832,149,356,174]}
+{"kind":"textbox","id":"sh/7u903y14","slide":13,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[850,167,42,28]}
+{"kind":"textbox","id":"sh/8vi1w3ip","slide":13,"text":"坐标映射","textPreview":"坐标映射","textChars":4,"textLines":1,"bbox":[898,164,255,34]}
+{"kind":"textbox","id":"sh/9wr258ja","slide":13,"text":"复杂版式下局部实体框可能不完整","textPreview":"复杂版式下局部实体框可能不完整","textChars":15,"textLines":1,"bbox":[854,217,310,68]}
+{"kind":"shape","id":"sh/ypgjqt0n","slide":13,"bbox":[438,354,356,174]}
+{"kind":"textbox","id":"sh/zqp0zy18","slide":13,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[456,372,42,28]}
+{"kind":"textbox","id":"sh/3yl8bqdo","slide":13,"text":"脱敏方式","textPreview":"脱敏方式","textChars":4,"textLines":1,"bbox":[504,369,255,34]}
+{"kind":"textbox","id":"sh/2xc7i5c3","slide":13,"text":"马赛克与模糊安全性低于黑框","textPreview":"马赛克与模糊安全性低于黑框","textChars":13,"textLines":1,"bbox":[460,422,310,68]}
+{"kind":"shape","id":"sh/pk3qd0vu","slide":13,"bbox":[832,354,356,174]}
+{"kind":"textbox","id":"sh/4zupkvu9","slide":13,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[850,372,42,28]}
+{"kind":"textbox","id":"sh/rml8fad0","slide":13,"text":"外部数据","textPreview":"外部数据","textChars":4,"textLines":1,"bbox":[898,369,255,34]}
+{"kind":"textbox","id":"sh/qlc7m5cf","slide":13,"text":"MultiPriv 仅 metadata_only，且非商业许可","textPreview":"MultiPriv 仅 metadata_only，且非商业许可","textChars":32,"textLines":1,"bbox":[854,422,310,68]}
+{"kind":"shape","id":"sh/donqhkvq","slide":13,"bbox":[438,585,750,58]}
+{"kind":"textbox","id":"sh/cnupofu5","slide":13,"text":"生产建议：strict + black + 更大边距 + 人工确认","textPreview":"生产建议：strict + black + 更大边距 + 人工确认","textChars":33,"textLines":1,"bbox":[458,597,710,32]}
+{"kind":"shape","id":"sh/7q1o36dg","slide":13,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/6ps7alwv","slide":13,"text":"诚实披露限制，是隐私系统可信度的一部分","textPreview":"诚实披露限制，是隐私系统可信度的一部分","textChars":19,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/wv65k7at","slide":13,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/6akv51","slide":13,"text":""}
+{"kind":"slide","id":"sl/4z5l8b","slide":14,"title":"PII-REDACTOR / PROJECT DEFENSE","textShapes":21}
+{"kind":"shape","id":"sh/dovytsji","slide":14,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/ql4zid0r","slide":14,"text":"PII-REDACTOR / PROJECT DEFENSE","textPreview":"PII-REDACTOR / PROJECT DEFENSE","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/rmdgri1c","slide":14,"text":"后续路线优先补真实数据与字形级定位","textPreview":"后续路线优先补真实数据与字形级定位","textChars":17,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/4z2hg3il","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/50byp8j6","slide":14,"bbox":[100,341,1040,0]}
+{"kind":"shape","id":"sh/ixkfet0v","slide":14,"bbox":[116,322,38,38]}
+{"kind":"textbox","id":"sh/3ytgny10","slide":14,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[119,327,32,25]}
+{"kind":"textbox","id":"sh/gv2xc3ip","slide":14,"text":"PHASE 01","textPreview":"PHASE 01","textChars":8,"textLines":1,"bbox":[96,153,270,24]}
+{"kind":"textbox","id":"sh/hwbyloja","slide":14,"text":"真实数据","textPreview":"真实数据","textChars":4,"textLines":1,"bbox":[96,190,270,38]}
+{"kind":"shape","id":"sh/tc72dcvm","slide":14,"bbox":[96,245,276,0]}
+{"kind":"textbox","id":"sh/8by147u1","slide":14,"text":"• 扩充人工标注图片集\n• 手写 / 阴影 / 低清分层\n• 建立独立开发与测试集","textPreview":"• 扩充人工标注图片集 | • 手写 / 阴影 / 低清分层 | • 建立独立开发与测试集","textChars":41,"textLines":3,"bbox":[96,260,280,120]}
+{"kind":"shape","id":"sh/7apkb2dg","slide":14,"bbox":[456,322,38,38]}
+{"kind":"textbox","id":"sh/69gj2hcv","slide":14,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[459,327,32,25]}
+{"kind":"textbox","id":"sh/l8729cva","slide":14,"text":"PHASE 02","textPreview":"PHASE 02","textChars":8,"textLines":1,"bbox":[436,153,270,24]}
+{"kind":"textbox","id":"sh/k7e107up","slide":14,"text":"定位能力","textPreview":"定位能力","textChars":4,"textLines":1,"bbox":[436,190,270,38]}
+{"kind":"shape","id":"sh/j65k72d4","slide":14,"bbox":[436,245,276,0]}
+{"kind":"textbox","id":"sh/y5wjyxcz","slide":14,"text":"• 字符级 / 字形级坐标\n• 目标检测模型\n• 专用手写数字识别","textPreview":"• 字符级 / 字形级坐标 | • 目标检测模型 | • 专用手写数字识别","textChars":33,"textLines":3,"bbox":[436,260,280,120]}
+{"kind":"shape","id":"sh/x4n25sve","slide":14,"bbox":[796,322,38,38]}
+{"kind":"textbox","id":"sh/w3e1wnut","slide":14,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[799,327,32,25]}
+{"kind":"textbox","id":"sh/oz2t8r61","slide":14,"text":"PHASE 03","textPreview":"PHASE 03","textChars":8,"textLines":1,"bbox":[776,153,270,24]}
+{"kind":"textbox","id":"sh/90buhw76","slide":14,"text":"产品治理","textPreview":"产品治理","textChars":4,"textLines":1,"bbox":[776,190,270,38]}
+{"kind":"shape","id":"sh/mx0b6hov","slide":14,"bbox":[776,245,276,0]}
+{"kind":"textbox","id":"sh/ny9sfmpg","slide":14,"text":"• PDF / 多页文档\n• 细粒度权限与审计\n• 前端与 OCR 响应优化","textPreview":"• PDF / 多页文档 | • 细粒度权限与审计 | • 前端与 OCR 响应优化","textChars":38,"textLines":3,"bbox":[776,260,280,120]}
+{"kind":"textbox","id":"sh/0vit4rqp","slide":14,"text":"NEXT VALIDATION","textPreview":"NEXT VALIDATION","textChars":15,"textLines":1,"bbox":[56,441,220,24]}
+{"kind":"shape","id":"sh/1wradc7a","slide":14,"bbox":[56,479,1168,118]}
+{"kind":"textbox","id":"sh/et0b2h8j","slide":14,"text":"真实人工标注图片开发集","textPreview":"真实人工标注图片开发集","textChars":11,"textLines":1,"bbox":[82,503,350,34]}
+{"kind":"textbox","id":"sh/zu9sbmp4","slide":14,"text":"先验证 OCR 召回与像素覆盖，再谈端到端自动化。","textPreview":"先验证 OCR 召回与像素覆盖，再谈端到端自动化。","textChars":25,"textLines":1,"bbox":[476,504,700,36]}
+{"kind":"textbox","id":"sh/krmtgb6t","slide":14,"text":"固定测试集不能用于调参；新算法应使用新版本冻结评测。","textPreview":"固定测试集不能用于调参；新算法应使用新版本冻结评测。","textChars":26,"textLines":1,"bbox":[82,552,1080,28]}
+{"kind":"shape","id":"sh/lsvu9g7e","slide":14,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/vmxwfa9w","slide":14,"text":"路线优先级：证据质量 > 类型数量 > 视觉效果","textPreview":"路线优先级：证据质量 > 类型数量 > 视觉效果","textChars":24,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/ulov658b","slide":14,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/4z5l8b","slide":14,"text":""}
+{"kind":"slide","id":"sl/4qzahv","slide":15,"title":"PII-REDACTOR / FINAL SYNTHESIS","textShapes":23}
+{"kind":"shape","id":"sh/ip4zqt0z","slide":15,"bbox":[0,0,1280,10]}
+{"kind":"textbox","id":"sh/5cvi1ozq","slide":15,"text":"PII-REDACTOR / FINAL SYNTHESIS","textPreview":"PII-REDACTOR / FINAL SYNTHESIS","textChars":30,"textLines":1,"bbox":[56,26,460,22]}
+{"kind":"textbox","id":"sh/4bmhsji5","slide":15,"text":"完整工程链路是项目的核心成果","textPreview":"完整工程链路是项目的核心成果","textChars":14,"textLines":1,"bbox":[56,55,1100,55]}
+{"kind":"textbox","id":"sh/rex03yhw","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1180,31,48,30]}
+{"kind":"shape","id":"sh/6d4zut0b","slide":15,"bbox":[58,176,132,76]}
+{"kind":"textbox","id":"sh/tgfi58zm","slide":15,"text":"数据","textPreview":"数据","textChars":2,"textLines":1,"bbox":[66,196,116,34]}
+{"kind":"shape","id":"sh/sf61w3i1","slide":15,"bbox":[226,176,132,76]}
+{"kind":"textbox","id":"sh/fix07yhs","slide":15,"text":"训练","textPreview":"训练","textChars":2,"textLines":1,"bbox":[234,196,116,34]}
+{"kind":"shape","id":"sh/ehojyd07","slide":15,"bbox":[394,176,132,76]}
+{"kind":"textbox","id":"sh/szax4r6x","slide":15,"text":"推理","textPreview":"推理","textChars":2,"textLines":1,"bbox":[402,196,116,34]}
+{"kind":"shape","id":"sh/tkjyxwni","slide":15,"bbox":[562,176,132,76]}
+{"kind":"textbox","id":"sh/6xsf21or","slide":15,"text":"映射","textPreview":"映射","textChars":2,"textLines":1,"bbox":[570,196,116,34]}
+{"kind":"shape","id":"sh/7y1wv65c","slide":15,"bbox":[730,176,132,76]}
+{"kind":"textbox","id":"sh/gnux8b69","slide":15,"text":"打码","textPreview":"打码","textChars":2,"textLines":1,"bbox":[738,196,116,34]}
+{"kind":"shape","id":"sh/1o3y1gne","slide":15,"bbox":[898,176,132,76]}
+{"kind":"textbox","id":"sh/ulsf61o3","slide":15,"text":"UI","textPreview":"UI","textChars":2,"textLines":1,"bbox":[906,196,116,34]}
+{"kind":"shape","id":"sh/fm1gz65o","slide":15,"bbox":[1066,176,132,76]}
+{"kind":"textbox","id":"sh/oruxcb65","slide":15,"text":"评测","textPreview":"评测","textChars":2,"textLines":1,"bbox":[1074,196,116,34]}
+{"kind":"shape","id":"sh/ps3y5gnq","slide":15,"bbox":[190,214,36,0]}
+{"kind":"shape","id":"sh/x8zepgfu","slide":15,"bbox":[358,214,36,0]}
+{"kind":"shape","id":"sh/c7qxgby9","slide":15,"bbox":[526,214,36,0]}
+{"kind":"shape","id":"sh/b6hwn6xo","slide":15,"bbox":[694,214,36,0]}
+{"kind":"shape","id":"sh/a58fe1g3","slide":15,"bbox":[862,214,36,0]}
+{"kind":"shape","id":"sh/lcjyt0fq","slide":15,"bbox":[1030,214,36,0]}
+{"kind":"shape","id":"sh/kbaxkvyl","slide":15,"bbox":[56,326,354,150]}
+{"kind":"textbox","id":"sh/za1grqx0","slide":15,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[68,338,42,30]}
+{"kind":"textbox","id":"sh/y98filgf","slide":15,"text":"不是单一模型","textPreview":"不是单一模型","textChars":6,"textLines":1,"bbox":[110,337,288,32]}
+{"kind":"textbox","id":"sh/1gfehwfm","slide":15,"text":"规则、MacBERT、OCR 与 CV 各自解决最适合的问题。","textPreview":"规则、MacBERT、OCR 与 CV 各自解决最适合的问题。","textChars":31,"textLines":1,"bbox":[74,376,318,92]}
+{"kind":"shape","id":"sh/0f6x8ry1","slide":15,"bbox":[448,326,354,150]}
+{"kind":"textbox","id":"sh/69k32dsn","slide":15,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[460,338,42,30]}
+{"kind":"textbox","id":"sh/7at4vy98","slide":15,"text":"工程闭环完整","textPreview":"工程闭环完整","textChars":6,"textLines":1,"bbox":[502,337,288,32]}
+{"kind":"textbox","id":"sh/sb2l43at","slide":15,"text":"数据、模型、界面、批量、历史、测试与报告可本地运行。","textPreview":"数据、模型、界面、批量、历史、测试与报告可本地运行。","textChars":26,"textLines":1,"bbox":[466,376,318,92]}
+{"kind":"shape","id":"sh/tcbmx8re","slide":15,"bbox":[840,326,354,150]}
+{"kind":"textbox","id":"sh/ud436dsz","slide":15,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[852,338,42,30]}
+{"kind":"textbox","id":"sh/fed4zi9k","slide":15,"text":"风险边界清晰","textPreview":"风险边界清晰","textChars":6,"textLines":1,"bbox":[894,337,288,32]}
+{"kind":"textbox","id":"sh/gzml8nap","slide":15,"text":"公开低覆盖与漏检结果，把人工复核纳入产品设计。","textPreview":"公开低覆盖与漏检结果，把人工复核纳入产品设计。","textChars":23,"textLines":1,"bbox":[858,376,318,92]}
+{"kind":"shape","id":"sh/h0vm1sra","slide":15,"bbox":[56,522,1168,88]}
+{"kind":"textbox","id":"sh/ah03u9sf","slide":15,"text":"可运行 · 可训练 · 可评测 · 可解释 · 可扩展","textPreview":"可运行 · 可训练 · 可评测 · 可解释 · 可扩展","textChars":27,"textLines":1,"bbox":[78,543,1124,44]}
+{"kind":"textbox","id":"sh/vi9kne90","slide":15,"text":"下一步：用真实标注数据证明安全覆盖，而不是继续放大模板化指标。","textPreview":"下一步：用真实标注数据证明安全覆盖，而不是继续放大模板化指标。","textChars":31,"textLines":1,"bbox":[56,635,1168,30]}
+{"kind":"shape","id":"sh/by10ral4","slide":15,"bbox":[56,687,1168,0]}
+{"kind":"textbox","id":"sh/axsjy5kj","slide":15,"text":"文档敏感信息智能检测与脱敏系统","textPreview":"文档敏感信息智能检测与脱敏系统","textChars":15,"textLines":1,"bbox":[56,695,1060,18]}
+{"kind":"textbox","id":"sh/x0jitkju","slide":15,"text":"LOCAL · PRIVATE · AUDITABLE","textPreview":"LOCAL · PRIVATE · AUDITABLE","textChars":27,"textLines":1,"bbox":[1000,695,224,18]}
+{"kind":"notes","id":"nt/4qzahv","slide":15,"text":""}
